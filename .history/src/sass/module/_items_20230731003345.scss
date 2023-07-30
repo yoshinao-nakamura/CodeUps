@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.list__items {
+  display: flex;
+  gap: 1rem;
+  @include mq(md)
+}
+
+.list__items-left {
+  @include mq(md) {
+    display: flex;
+  }
+}
+
+.list__items-right {
+  @include mq(md) {
+    display: flex;
+  }
+}

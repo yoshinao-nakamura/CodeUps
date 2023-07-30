@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.list__item {
+  color: $white;
+}
+
+.list__title {
+  display: flex;
+  align-items: center;
+  color: $white;
+  font-weight: $bold;
+  padding-top: 2.5rem;
+}
+
+.list__title img {
+  margin-right: 10px; 
+  width: 1.125rem;
+  height: 1,125rem;
+}
+
+.list__text {
+  padding-top: 1.5rem;
+  
+}

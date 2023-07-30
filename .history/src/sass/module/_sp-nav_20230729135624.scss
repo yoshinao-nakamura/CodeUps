@@ -1,0 +1,19 @@
+@use 'global' as *;
+
+
+.p-sp-nav__items {
+  padding-top: 25rem;
+  padding-bottom: 20rem;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.p-sp-nav__item a {
+  display: block;
+  width: 100%;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+}

@@ -1,0 +1,33 @@
+@use 'global' as *;
+.p-header__sp-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  width: 100%;
+  height: 100vh;
+  z-index: 8888;
+  @include mq(md){
+    display: none;
+  }
+}
+
+
+
+.p-sp-nav__items {
+  padding-top: 25rem;
+  padding-bottom: 20rem;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.p-sp-nav__item a {
+  display: block;
+  width: 100%;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+}

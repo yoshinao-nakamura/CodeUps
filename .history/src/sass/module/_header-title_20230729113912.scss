@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.header__title {
+  text-align: center;
+}
+
+.title__en {
+  font-family: $en-family;
+  font-size: rem(32);
+}
+.title__jp {
+  font-family: $base-font-family;
+  font-weight: $regular;
+  
+}

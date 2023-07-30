@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.header {
+  background-color: aqua;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: ;
+}
+
+.header__inner {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo img{
+  width: rem(102);
+  height: rem(38);
+}

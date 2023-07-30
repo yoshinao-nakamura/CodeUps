@@ -1,0 +1,19 @@
+@use "global" as *;
+
+
+
+.list-title {
+  display: flex;
+  align-items: center;
+  color: $white;
+}
+
+.list-title img {
+  margin-right: 10px; 
+  width: 1.125rem;
+  height: 1,125rem;
+}
+
+.list-text {
+
+}

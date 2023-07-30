@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.list__items {
+  display: flex;
+  gap: 1rem;
+  @include mq(md) {
+    gap: 7.5rem;
+  }
+}
+
+.list__items-left {
+  @include mq(md) {
+    display: flex;
+  }
+}
+
+.list__items-right {
+  @include mq(md) {
+    display: flex;
+  }
+}

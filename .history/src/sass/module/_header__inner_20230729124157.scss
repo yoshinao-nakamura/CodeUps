@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.header {
+  background-color: aqua;
+}
+
+.header__inner {
+
+}
+
+.header__logo {
+  width: rem(102);
+  height: rem(38);
+  z-index: 9999
+  ;
+}

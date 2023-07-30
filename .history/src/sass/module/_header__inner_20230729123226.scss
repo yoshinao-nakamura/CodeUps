@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.header {
+  background-color: aqua;
+}
+
+.header__inner {
+
+  height: rem(10);
+}

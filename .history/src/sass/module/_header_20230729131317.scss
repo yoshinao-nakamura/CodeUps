@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.header {
+  background-color: aqua;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header__inner {
+
+}
+
+.header__logo img{
+  width: rem(102);
+  height: rem(38);
+}
