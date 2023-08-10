@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.campaign-btn {
+  margin-top: 2.5rem;
+  @include mq(md) {
+    margin-top: ;
+  }
+}

@@ -1,0 +1,16 @@
+@use 'global' as *; 
+
+.about-us__img {
+  display: flex;
+  position: relative;
+}
+
+.about-us__img-left {
+  width: 37%;
+  z-index: 1000;
+}
+
+.about-us__img-right {
+  width: 81%;
+  top
+}

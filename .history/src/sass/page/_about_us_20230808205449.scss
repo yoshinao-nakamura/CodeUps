@@ -1,0 +1,70 @@
+@use 'global' as *; 
+
+.about-us {
+  margin-top: 5rem;
+  background-image: url('/dist/assets/images/common/campaign-left.jpg');
+  @include mq(md) {
+    margin-top: 8.75rem;
+    padding-bottom: 8.75rem;
+  }
+}
+
+.about-us__img {
+  display: flex;
+  position: relative;
+  padding-bottom: ;
+}
+
+.about-us__img-left {
+  width: 37%;
+  z-index: 1000;
+}
+
+.about-us__img-right {
+  width: 81%;
+  position: absolute;
+  top: 1.625rem;
+  left: 4rem;
+}
+
+
+.about-us__block {
+  position: relative;
+  z-index: 1000;
+  margin: auto;
+}
+.about-us__block-inner {
+  text-align: center;
+  @include mq(md) {
+    display: flex;
+    position: absolute;
+    top: -500px;
+    left: 250px;
+    max-width: 52.5rem;
+    width: 100%;
+    gap: 2.5rem;
+  }
+}
+
+.about-us__title {
+  max-width: 25rem;
+  width: 100%;
+  font-size: 2.5rem;
+  color: #408F95;
+  font-family: $en-family;
+  line-height: 1;
+  font-weight: $regular;
+  @include mq(md) {
+    font-size: 5rem;
+    color: #fff;
+    line-height: 1.25;
+  }
+}
+.about-us__text-block {
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.about-us__btn {
+  margin-top: 2.5rem;
+}

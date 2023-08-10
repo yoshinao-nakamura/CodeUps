@@ -1,0 +1,18 @@
+@use 'global' as *; 
+.voice {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.voice__header {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+.voice__header-top {
+  display: flex;
+  margin-top: 2.5rem;
+}
+.voice__sub-title {
+  border-bottom: 0.0625rem solid #408F95;
+}
+
+.voice__header

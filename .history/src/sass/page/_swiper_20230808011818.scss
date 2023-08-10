@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #fff;
+  font-size: 14px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #408F95;
+  border-radius: 100%;
+}

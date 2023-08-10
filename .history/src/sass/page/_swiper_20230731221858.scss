@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  // height: 100vh;
+}
+
+/* ズーム */
+.splide__slide img {
+  transition: 8s ease-out;
+}
+.splide__slide.is-active img {
+  transform: scale(1.15);
+  transition-delay: 0s;
+}
+/* スライドのサイズ調整 */
+.splide__slide img {
+  height: auto;
+  width: 100%;
+}

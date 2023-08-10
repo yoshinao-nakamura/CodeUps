@@ -1,0 +1,57 @@
+@use "global" as *;
+
+.card__img {
+  position: relative;
+}
+
+.card__img::before {
+  content: "";
+  display: block;
+  padding-top: 62.686567%;
+}
+.card__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__body {
+  padding: 1rem;
+}
+
+.card__top {
+  border: #408F95 solid 0.0625rem;
+  padding: 0.25rem 0.75rem;
+  color: #408F95;
+  font-size: 0.75rem;
+  line-height: 1.83;
+}
+
+.card__sub-title {
+  font-weight: $normal;
+  line-height: 1.5;
+}
+
+.card__text {
+  display: flex;
+  color: #408F95;
+}
+.card__meta {
+  text-align: center;
+}
+.card__meta-title {
+  font-size: 0.875rem;
+  font-weight: $regular;
+  line-height: 1.714;
+}
+
+.card__price {
+  font-size: 1.25rem;
+  font-weight: $bold;
+  font-family: Lato;
+  line-height: 1;
+}

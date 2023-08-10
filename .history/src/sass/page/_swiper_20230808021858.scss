@@ -1,0 +1,27 @@
+@use "global" as *;
+
+/* Custom styles for the next button */
+.custom-next-button::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../../assets/images/common/campaign-right.svg');
+}
+
+/* Custom styles for the previous button */
+.custom-prev-button::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../../assets/images/common/campaign-left.svg');
+}
+
+/* Additional styles for both buttons (optional) */
+.custom-next-button,
+.custom-prev-button {
+  height: 5rem;
+}

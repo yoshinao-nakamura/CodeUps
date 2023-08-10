@@ -1,0 +1,6 @@
+@use "global" as *;
+
+.campaign {
+  @include mq()
+  margin-top: 3.625rem;
+}

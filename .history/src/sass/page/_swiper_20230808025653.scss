@@ -1,0 +1,93 @@
+@use "global" as *;
+
+.swiper-button-prev,
+.swiper-button-next {
+  height: 5rem;
+  width: 5rem;
+}
+
+
+/* Custom styles for the next button */
+.custom-next-button.swiper-button-next::after {
+  content: "";
+  width: 5rem;
+  height: 5rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../../assets/images/common/campaign-right.svg');
+}
+
+/* Custom styles for the previous button */
+.custom-prev-button.swiper-button-prev::after {
+  content: "";
+  width: 5rem;
+  height: 5rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../../assets/images/common/campaign-left.svg');
+}
+
+/* Additional styles for both buttons (optional) */
+.custom-next-button,
+.custom-prev-button {
+  width: 5rem;
+  height: 5rem;
+}
+
+/* Custom styles for the next button */
+.custom-next-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5rem;
+  height: 5rem;
+}
+
+/* Custom styles for the previous button */
+.custom-prev-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5rem;
+  height: 5rem;
+}
+
+/* Additional styles for both buttons (optional) */
+.mySwiper {
+  position: relative; /* Ensure the swiper container is a reference for absolute positioning */
+}
+/* Update styles for the swiper container */
+.mySwiper {
+  position: relative; /* Ensure the swiper container is a reference for absolute positioning */
+  display: flex; /* Use flexbox to align items */
+  justify-content: flex-end; /* Align items to the right (end) */
+  align-items: flex-start; /* Align items to the top */
+}
+
+/* Custom styles for the next button */
+.custom-next-button.swiper-button-next::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../../assets/images/common/campaign-right.svg') !important;
+}
+
+/* Custom styles for the previous button */
+.custom-prev-button.swiper-button-prev::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../../assets/images/common/campaign-left.svg') !important;
+}
+
+/* Additional styles for both buttons (optional) */
+.custom-next-button,
+.custom-prev-button {
+  width: 5rem;
+  height: 5rem;
+  margin: 0.5rem; /* Add some space between the buttons */
+}

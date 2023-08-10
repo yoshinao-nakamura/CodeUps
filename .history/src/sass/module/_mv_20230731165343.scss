@@ -1,0 +1,49 @@
+@use 'global' as *;
+
+.mv {
+  position: relative;
+  height: 100vh;
+  background-image: url(/src/images/);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.p-mv__header {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: rem(50);
+  color: $white;
+  @include mq(md){
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+}
+
+.p-mv__title {
+  font-size: rem(48);
+  font-weight: $bold;
+  font-family: $en-family;
+  line-height: 1.1;
+  @include mq(md) {
+    font-size: rem(72);
+  }
+}
+
+.p-mv__subtitle {
+  font-size: rem(15);
+  letter-spacing: 0.1em;
+  line-height: 1.8125;
+  margin-top: rem(20);
+  @include mq(md) {
+    font-size: rem(24);
+  }
+}
+
+.p-mv__btn {
+  margin-top: rem(50);
+}
+

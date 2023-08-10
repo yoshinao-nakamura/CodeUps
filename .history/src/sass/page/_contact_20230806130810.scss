@@ -1,0 +1,66 @@
+@use "global" as *;
+
+.contact__inner {
+  text-align: center;
+  @include mq(md) {
+    display: flex;
+    vertical-align: middle;
+  }
+}
+
+.contact-info {
+  @include mq(md) {
+    display: flex;
+  }
+}
+.contact__logo img {
+  width: 200px;
+  height: 75px;
+  border-bottom: ;
+  // aspect-ratio: 174 / 65;
+  // object-fit: cover;
+}
+
+.contact-info__map iframe {
+  height: auto;
+  aspect-ratio: 295 / 160;
+  object-fit: cover;
+  width: 100%;
+  @include mq(md) {
+    aspect-ratio: 273 / 148;
+  }
+}
+
+.contact-right {
+  text-align: center;
+}
+
+.contact-right__title__en {
+  font-family: $en-family;
+  font-size: 5rem;
+  color: #0D2936;
+  line-height: 1;
+}
+
+.contact-right__title__en::first-letter {
+  color: #408F95;
+}
+.contact-right__title__top {
+  font-family: $base-font-family;
+  font-weight: $regular;
+  color: #408F95;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.contact-right__title_bottom {
+  font-family: $base-font-family;
+  font-weight: $regular;
+  color: #408F95;
+  font-size: 0.875rem;
+  line-height: 1.285;
+}
+
+.contact__btn {
+  margin-top: 2.5rem;
+}

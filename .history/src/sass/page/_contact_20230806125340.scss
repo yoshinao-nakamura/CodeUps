@@ -1,0 +1,51 @@
+@use "global" as *;
+
+.contact-right {
+  text-align: center;
+}
+
+.contact-right__title__en {
+  font-family: $en-family;
+  font-size: rem(32);
+  color: #0D2936;
+  line-height: calc(40 / 32);
+  @include mq(md) {
+    font-size: rem(40);
+    line-height: 1;
+  }
+}
+
+.contact-right__title__en::first-letter {
+  color: #408F95;
+}
+.title__jp {
+  font-family: $base-font-family;
+  font-weight: $regular;
+  color: #408F95;
+  font-size: rem(12);
+  line-height: calc(18 / 12);
+}
+
+.contact__inner {
+  display: flex;
+}
+
+.contact-info {
+  display: flex;
+}
+.contact__logo img {
+  width: 200px;
+  height: 75px;
+  // aspect-ratio: 174 / 65;
+  // object-fit: cover;
+}
+
+.contact-info__map iframe {
+  height: auto;
+  aspect-ratio: 295 / 160;
+  object-fit: cover;
+  width: 100%;
+  @include mq(md) {
+    aspect-ratio: 273 / 148;
+  }
+}

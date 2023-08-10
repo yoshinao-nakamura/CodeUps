@@ -1,0 +1,21 @@
+@use "global" as *;
+
+  .swiper-container {
+      //左右の余白はcontainerに指定する
+      padding: 0 20px;
+  }
+    .swiper-wrapper {
+      padding: 30px 0;
+    }
+    
+      .swiper-slide {
+        // slideに任意の幅と高さ指定      
+        width: 150px;
+        height: 100px;
+        // 以下見た目調節      
+        border-radius: 10px;
+        box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      

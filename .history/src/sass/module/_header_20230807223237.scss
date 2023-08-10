@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.header {
+  background-color: rgba(13, 41, 54, 0.68);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4.6rem;
+  width: 100%;
+  transition: 0.3s;
+  z-index: 9999;
+  @include mq(md) {
+  height: 5.6rem;
+  }
+}
+
+.header__inner {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 rem;
+  @include mq(md) {
+  padding: 0 2.5rem;
+}
+}
+
+
+.header__logo img{
+  width: 6.375rem;
+  height: 2.375rem;
+  @include mq(md) {
+    width: 8.312rem;
+    // height: 3.125rem;
+  }
+}
+
+.btn-trigger {
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.header__pc-nav-items {
+  vertical-align: middle;
+}
+
+.header__pc-nav {
+  height: inherit;
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}

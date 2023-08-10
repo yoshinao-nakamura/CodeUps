@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.campaign-card__text {
+  gap: 1rem;
+  @include mq(md) {
+    
+  }
+}

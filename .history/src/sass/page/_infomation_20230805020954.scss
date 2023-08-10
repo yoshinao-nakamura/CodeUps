@@ -1,0 +1,38 @@
+@use 'global' as *; 
+
+.blog__block {
+  background-color: #DDF0F1;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  @include mq(md) {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+  }
+}
+
+
+.blog__block__content {
+  margin-top: 1.5rem;
+  @include mq(md) {
+    display: flex;
+    gap: 3rem;
+  }
+} 
+.blog__block__block {
+  margin-top: 1.5rem;
+  @include mq(md) {
+    margin: auto;
+  }
+}
+.blog__block__block-title {
+  font-weight: $bold;
+  font-size: 1.25rem;
+  border-bottom: 1px solid #408F95;
+}
+.blog__block__block-text {
+  line-height: 1.5;
+}
+
+.blog__block__btn {
+  margin-top: 2.5rem;
+}
