@@ -1,0 +1,31 @@
+@use "global" as *;
+
+// #page-top a {
+//   background-color: #1cb4d3;
+//   bottom: 0;
+//   color: #fff;
+//   padding: 20px;
+//   position: fixed;
+//   right: 0;
+// }
+
+#page-top {
+  bottom: 0;
+  position: fixed;
+  right: 0;
+}
+#page-top a {
+  border-radius: 50%;
+  height: 70px;
+  padding: 0;
+  text-align: center;
+  transition: opacity .5s;
+  width: 70px;
+}
+#page-top a:hover {
+  opacity: 0.8;
+  transition: opacity .5s;
+}
+#page-top a img {
+  width: 70px;
+}

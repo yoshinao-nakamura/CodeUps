@@ -1,32 +1,28 @@
 
 $(document).ready(function() {
-  // モバイルメニューをデフォルトで非表示にする
-  $('.fullscreen-menu').hide();
-
-  // ボタンがクリックされたときに、モバイルメニューとヘッダーの表示・非表示を切り替える
-  $('.btn-trigger').on('click', function() {
-    $(this).toggleClass('active');
-    $('.fullscreen-menu').toggleClass('active');
-    $('.header').toggleClass('active');
-  });
-
-  // モバイルメニュー内のリンクがクリックされたときに、メニューを非表示にする
-  $('.fullscreen-menu ul li a').on('click', function() {
-    $('.btn-trigger').removeClass('active');
-    $('.fullscreen-menu').removeClass('active');
-    $('.header').removeClass('active');
-  });
-
-  // モバイルメニュー以外の場所をクリックしたときに、メニューを非表示にする
-  $(document).on('click', function(event) {
-    if (!$(event.target).closest('.fullscreen-menu').length && !$(event.target).closest('.btn-trigger').length) {
-      $('.btn-trigger').removeClass('active');
-      $('.fullscreen-menu').removeClass('active');
-      $('.header').removeClass('active');
-    }
+  $("#btn02").click(function() {
+    $(this).toggleClass("active");
+    $("#menu").toggleClass("active");
+    // $(".header").toggleClass("active");
   });
 });
 
+// $('.btn-trigger').on('click', function () {
+//   if ($('.btn-trigger').hasClass('is-open')) {
+//     $('.fullscreen-menu').fadeOut();
+//     $(this).removeClass('is-open');
+//   } else {
+//     $('.fullscreen-menu').fadeIn();
+//     $(this).addClass('is-open');
+//   }
+// });
+
+// $(document).ready(function() {
+//   $(".btn-trigger").click(function() {
+//     $(".fullscreen-menu").toggleClass("active");
+//     $(".header").toggleClass("active");
+//   });
+// });
 
 const splide = new Splide(".splide", {
   autoplay: true, // 自動再生
@@ -40,8 +36,10 @@ const splide = new Splide(".splide", {
 
 
 const mainSwiper = new Swiper(".mySwiper", {
+  loop: true, // 無限ループを有効にする
   spaceBetween: 30,
-  centeredSlides: true,
+  centeredSlides: false, // centeredSlidesをfalseに設定
+  slidesPerView: 1,     // 1枚表示
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
@@ -56,19 +54,30 @@ const mainSwiper = new Swiper(".mySwiper", {
   },
   // Responsive breakpoints
   breakpoints: {
-    // when window width is >= 320px
-    // 375: {
-    //   slidesPerView: 1.5,
-    //   spaceBetween: 20,
-    // },
-    // when window width is >= 640px
+    767: {
+      slidesPerView: 1.5, // 1.5枚表示
+      spaceBetween: 0,
+      width: 280,
+    },
     768: {
       slidesPerView: 4,
       spaceBetween: 40,
-      width: 1265.5,
+      width: 1440,
     },
   },
 });
+const swiperSlides = document.querySelectorAll(".swiper-slide");
+swiperSlides.forEach(slide => {
+  slide.style.width = "333px";
+  slide.style.marginRight = "40px";
+});
+
+
+
+
+
+
+
 
 
 
@@ -100,6 +109,28 @@ box.each(function(){
             counter = 1;
           }
      });
+});
+
+
+$(function () {
+  const pageTop = $("#page-top");
+  pageTop.hide();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) { // 100pxスクロールしたら発火
+      pageTop.fadeIn(); // 100px以上スクロールしたらボタンをフェードイン
+    } else {
+      pageTop.fadeOut(); // 100px以下になったらボタンをフェードアウト
+    }
+  });
+  pageTop.click(function () {
+    $("body,html").animate(
+      {
+        scrollTop: 0,
+      },
+      500 // 500ミリ秒かけてページトップに戻る
+    );
+    return false;
+  });
 });
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる

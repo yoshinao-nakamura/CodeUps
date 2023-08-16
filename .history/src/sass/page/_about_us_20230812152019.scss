@@ -1,0 +1,112 @@
+@use 'global' as *; 
+
+.about-us {
+  margin-top: 5rem;
+  background-image: url('/dist/assets/images/common/campaign-left.jpg');
+  @include mq(md) {
+    margin-top: 8.75rem;
+    margin-bottom: 13.75rem;
+  }
+}
+
+.about-us__title {
+  margin-bottom: 2.5rem;
+}
+
+.about-us__img {
+  display: flex;
+  position: relative;
+}
+
+.about-us__img-left {
+  max-width: 8rem;
+  width: 100%;
+   object-fit: cover;
+   aspect-ratio: 128 / 194;
+   z-index: 1000;
+  @include mq(md) {
+   max-width: 25rem;
+  }
+
+}
+
+.about-us__img-right {
+  max-width: 17.5625rem;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 281 / 186;
+  position: absolute;
+  left: 4rem;
+  top: 1.125rem;
+  @include mq(md) {
+    width: 100%;
+    max-width: 55rem;
+    height: 36.25rem;
+    position: absolute;
+    top: 5rem;
+    left: 12.5rem;
+  }
+}
+
+
+.about-us__block {
+  position: relative;
+  z-index: 1000;
+  margin-top: ;
+}
+.about-us__block-inner {
+  text-align: left;
+  @include mq(md) {
+    display: flex;
+    position: absolute;
+    top: -25.4rem;
+    left: 12.45rem;
+    max-width: 52.5rem;
+    width: 100%;
+    gap: 2.5rem;
+  }
+}
+
+.about-us__top-title {
+  font-size: 2.5rem;
+  color: #408F95;
+  font-family: $en-family;
+  line-height: 1;
+  font-weight: $regular;
+  @include mq(md) {
+    font-size: 5rem;
+    color: #fff;
+    line-height: 1.25;
+    max-width: 27rem;
+    width: 400px;
+  }
+}
+
+.about-us__text-block {
+  @include mq(md) {
+    line-height: 1.5;
+    max-width: 25rem;
+    width: 100%;
+    color: #fff;
+  }
+}
+
+.about-us__btn {
+  margin-top: 2.5rem;
+}
+
+.about-us__coral-img {
+  position: relative;
+}
+.coral-img {
+  display: none;
+  @include mq(md) {
+    display: block;
+    width: 194px;
+    height: 181px;
+    position: absolute;
+    top: -2.3rem;
+    left: 61.5rem;
+  }
+}
+
