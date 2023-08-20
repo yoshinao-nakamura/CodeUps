@@ -1,21 +1,6 @@
 @use "global" as *;
 
 
-.footer__items {
-  display: flex;
-  gap: 1rem;
-  @include mq(md) {
-    gap: 7.5rem;
-  }
-}
-
-.footer__item {
-  gap: 1rem;
-  @include mq(md) {
-    display: flex;
-    gap: 7.5rem;
-  }
-}
 
 .list__items {
   @include mq(md) {

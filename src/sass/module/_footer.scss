@@ -49,6 +49,21 @@
   }
 }
 
+.footer__items {
+  display: flex;
+  gap: 1rem;
+  @include mq(md) {
+    gap: 7.5rem;
+  }
+}
+
+.footer__item {
+  gap: 1rem;
+  @include mq(md) {
+    display: flex;
+    gap: 7.5rem;
+  }
+}
 
 .footer__small {
   font-size: 0.75rem;
@@ -62,9 +77,4 @@
     font-size: 0.875rem;
   }
 }
-
-
-// .footer__text {
-//   margin-top: 1.5rem;
-// }
 

@@ -6,7 +6,7 @@
   background-color: #408F95;
 }
 
-.fullscreen-menu {
+.drawer {
   display: none;
   position: fixed;
   top: 5rem;
@@ -21,7 +21,7 @@
    /* メニュー内のコンテンツを適切に配置するために余白を追加 */
 }
 
-.fullscreen-menu.active {
+.drawer.active {
   display: block;
 }
 
