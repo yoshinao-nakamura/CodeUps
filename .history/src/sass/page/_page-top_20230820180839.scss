@@ -2,6 +2,7 @@
 
 
 #page-top {
+  display: none;
   @include mq(md){
     bottom: 20px;
     position: fixed;

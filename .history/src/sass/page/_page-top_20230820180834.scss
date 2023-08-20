@@ -2,6 +2,7 @@
 
 
 #page-top {
+  display: none;
   @include mq(md){
     bottom: 20px;
     position: fixed;
@@ -9,7 +10,7 @@
   }
 }
 #page-top a {
-  display: none;
+  dis
   @include mq(md) {
     border-radius: 50%;
     height: 80px;

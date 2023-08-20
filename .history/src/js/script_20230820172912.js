@@ -39,9 +39,9 @@ const mainSwiper = new Swiper(".mySwiper", {
   // Responsive breakpoints
   breakpoints: {
     375: {
-      slidesPerView: 1, 
-      spaceBetween: 24,
-      width: 280,
+      slidesPerView: 2, // 1.5枚表示
+      spaceBetween: 20,
+      width: 375,
     },
     768: {
       slidesPerView: 4,

@@ -1,11 +1,11 @@
 @use "global" as *;
 
 .cards {
-  display: flex;
+  // display: flex;
 }
 
 .card {
-  max-width: 20.8125rem;
+  // max-width: 20.8125rem;
   width: 100%;
   @include mq {
     gap: 2.75rem;

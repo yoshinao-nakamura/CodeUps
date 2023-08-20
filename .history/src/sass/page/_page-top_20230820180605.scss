@@ -9,7 +9,6 @@
   }
 }
 #page-top a {
-  display: none;
   @include mq(md) {
     border-radius: 50%;
     height: 80px;

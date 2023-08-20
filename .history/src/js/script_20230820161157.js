@@ -1,12 +1,28 @@
 
 $(document).ready(function() {
-  $("#btn02").click(function() {
+  $(".btn-trigger").click(function() {
     $(this).toggleClass("active");
     $("#menu").toggleClass("active");
     $(".header").toggleClass("active");
   });
 });
 
+// $('.btn-trigger').on('click', function () {
+//   if ($('.btn-trigger').hasClass('is-open')) {
+//     $('.fullscreen-menu').fadeOut();
+//     $(this).removeClass('is-open');
+//   } else {
+//     $('.fullscreen-menu').fadeIn();
+//     $(this).addClass('is-open');
+//   }
+// });
+
+// $(document).ready(function() {
+//   $(".btn-trigger").click(function() {
+//     $(".fullscreen-menu").toggleClass("active");
+//     $(".header").toggleClass("active");
+//   });
+// });
 
 const splide = new Splide(".splide", {
   autoplay: true, // 自動再生
@@ -38,10 +54,10 @@ const mainSwiper = new Swiper(".mySwiper", {
   },
   // Responsive breakpoints
   breakpoints: {
-    375: {
-      slidesPerView: 1, 
-      spaceBetween: 24,
-      width: 280,
+    767: {
+      slidesPerView: 2, // 1.5枚表示
+      spaceBetween: 20,
+      width: 375,
     },
     768: {
       slidesPerView: 4,

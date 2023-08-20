@@ -38,10 +38,10 @@ const mainSwiper = new Swiper(".mySwiper", {
   },
   // Responsive breakpoints
   breakpoints: {
-    375: {
-      slidesPerView: 1, 
+    374: {
+      slidesPerView: 1.2, 
       spaceBetween: 24,
-      width: 280,
+      width: 375,
     },
     768: {
       slidesPerView: 4,
@@ -50,11 +50,11 @@ const mainSwiper = new Swiper(".mySwiper", {
     },
   },
 });
-const swiperSlides = document.querySelectorAll(".swiper-slide");
-swiperSlides.forEach(slide => {
-  slide.style.width = "333px";
-  slide.style.marginRight = "40px";
-});
+// const swiperSlides = document.querySelectorAll(".swiper-slide");
+// swiperSlides.forEach(slide => {
+//   slide.style.width = "333px";
+//   slide.style.marginRight = "40px";
+// });
 
 
 
