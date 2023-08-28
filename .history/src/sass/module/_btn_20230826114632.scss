@@ -1,0 +1,91 @@
+@use "global" as *;
+
+.btn-common {
+  text-align: center;
+}
+
+
+.btn {
+  /* アニメーションの起点とするため relative を指定 */
+  position: relative;
+  /* ボタンの形状 */
+  text-decoration: none;
+  display: inline-block;
+  width: rem(200);
+  // height: 3.375rem;
+  border: 1px solid #408F95; /* ボーダーの色と太さ */
+  padding: rem(16) 0 rem(16) rem(40);
+  text-align: left;
+  outline: none;
+  background-color: #408F95;
+  /* アニメーションの指定 */
+  transition: ease 0.2s;
+}
+
+.btn::after {
+  position: absolute;
+  content: "";
+  top: rem(4);
+  left: rem(4);
+  bottom: 0;
+  right: 0;
+  border: 1px solid #408F95; /* ボーダーの色と太さ */
+  background-color: transparent;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+/* ボタン内 span の形状 */
+.btn span {
+  position: relative;
+  z-index: 3; /* z-index の数値をあげて文字を背景よりも手前に表示 */
+  color: #fff;
+  font-size: rem(14);
+  font-family: $en-family;
+}
+
+.btn:hover span {
+  color: #408F95;
+}
+
+.btn span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 5px);
+  width: rem(40);
+  height: 6px;
+  margin-top: rem(3); /* 中央に配置 */
+  margin-left: rem(7);
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: skewX(45deg);
+  z-index: 5;
+  transition: border-color 0.2s; /* アニメーションを設定 */
+}
+
+.btn:hover span::before {
+  border-color: #408F95; /* ホバー時の色変更 */
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transform: scale(0, 1);
+  transform-origin: right top;
+}
+
+.btn:hover::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+
