@@ -1,0 +1,111 @@
+@use "global" as *;
+
+.cards {
+  display: flex;
+}
+
+.card {
+  @include mq {
+    flex-grow: 1;
+  }
+}
+
+
+
+.card__img {
+  aspect-ratio: 280 / 188 ;
+  @include mq(md) {
+    aspect-ratio: 333 / 223;
+    
+  }
+
+}
+
+.card__img img {
+  object-fit: cover;
+
+}
+
+.card__body {
+  padding-top: rem(15);
+  padding-bottom: rem(24);
+  padding-right: rem(16);
+  padding-left: rem(16);
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
+  @include mq(md) {
+    padding-top: rem(24);
+    padding-bottom: rem(40);
+  }
+}
+
+.card__top {
+  display: inline-block;
+  border: #408F95 solid rem(1);
+  padding: rem(4) rem(12);
+  color: #408F95;
+  font-size: rem(12);
+  // line-height: 1.83;
+  @include mq(md) {
+    padding: rem(6) rem(16);
+  }
+}
+
+.card__sub-title {
+  font-weight: $normal;
+  line-height: 1.5;
+  padding-top: rem(4);
+  padding-bottom: rem(8);
+  flex-grow: 1;
+}
+
+
+.card__meta {
+  text-align: center;
+  border-top: 1px solid #408F95;
+  padding-top: rem(16);
+}
+.card__meta-title {
+  font-size: rem(14);
+  font-weight: $regular;
+  line-height: 1.714;
+  color: #0D2936;
+  // padding-top: 0.5rem;
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.card__text {
+  display: flex;
+  justify-content: center;
+  padding-top: rem(8);
+  font-family: Lato;
+  align-items: baseline;
+}
+
+.card__price {
+  font-size: rem(20);
+  font-weight: $bold;
+  font-family: Lato;
+  line-height: 1;
+  color: #C94800;
+  text-decoration: line-through;
+  align-items: end;
+  @include mq(md) {
+    font-size: rem(24);
+  }
+  }
+  .card__price span {
+    color: #0D2936;
+  }
+.card__price-down {
+  color: #408F95;
+  font-weight: $bold;
+  font-size: rem(32);
+  font-family: 'Lato',;
+  line-height: 1;
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
+

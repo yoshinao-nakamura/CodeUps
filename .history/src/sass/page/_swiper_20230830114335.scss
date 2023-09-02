@@ -1,0 +1,134 @@
+@use "global" as *;
+.swiper-campaign {
+  // width: 100%;
+  // width: 100vw;
+  margin-right: calc(50% - 50vw);
+  position: relative;
+}
+
+
+.custom-next-button.swiper-button-next {
+  display: none;
+  @include mq(md) {
+    display: block;
+    background-image: url('../../assets/images/common/campaign-right.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -85px;
+    left:calc(50% + 370px);
+    height: rem(80);
+    width: rem(80);
+  }
+}
+.custom-prev-button.swiper-button-prev {
+  display: none;
+  @include mq(md) {
+    display: block;
+    background-image: url('../../assets/images/common/campaign-left.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -85px;
+    left:calc(50% + 210px);
+    height: rem(80);
+    width: rem(80);
+  }
+}
+
+
+
+element.style {
+}
+@media screen and (min-width: 768px)
+.custom-next-button.swiper-button-next {
+    background-image: url(../../assets/images/common/campaign-right.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 5rem;
+    left: calc(50% + 370px);
+    position: absolute;
+    top: -85px;
+    width: 5rem;
+}
+.custom-next-button.swiper-button-next {
+    display: none;
+}
+[aria-controls] {
+    cursor: pointer;
+}
+button, [type="button"], [type="reset"], [type="submit"], [role="button"] {
+    cursor: pointer;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 10px;
+    left: auto;
+}
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: calc(var(--swiper-navigation-size)/ 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color,var(--swiper-theme-color));
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+*, ::before, ::after {
+    background-repeat: no-repeat;
+    box-sizing: inherit;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+ユーザー エージェント スタイルシート
+div {
+    display: block;
+}
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+}
+body {
+    font-family: "Noto Sans JP", sans-serif;
+}
+:root {
+    --swiper-navigation-size: 44px;
+}
+html {
+    box-sizing: border-box;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+}
+@media (min-width: 1080px)
+html {
+    font-size: 16px;
+}
+@media screen and (min-width: 768px)
+html {
+    font-size: 1.4814814815vw;
+}
+html {
+    font-size: 16px;
+}
+::before, ::after {
+    text-decoration: inherit;
+    vertical-align: inherit;
+}
+*, ::before, ::after {
+    background-repeat: no-repeat;
+    box-sizing: inherit;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.swiper-button-next:after

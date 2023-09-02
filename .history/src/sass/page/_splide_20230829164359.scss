@@ -1,0 +1,22 @@
+@use "global" as *;
+
+/* ズーム */
+.splide__slide img {
+  transition: 8s ease-out;
+}
+.splide__slide.is-active img {
+  transform: scale(1.15);
+  transition-delay: 0s;
+  aspect-ratio: 16 / 9 ;
+}
+// /* スライドのサイズ調整 */
+.splide__slide img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.splide__arrows,
+.splide__pagination .splide__pagination__page{
+display: none;
+}
