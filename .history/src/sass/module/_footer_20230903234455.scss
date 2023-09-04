@@ -17,6 +17,8 @@
    }
 }
 
+
+
 .footer__logo {
   @include mq(md) {
     display: flex;
@@ -55,11 +57,6 @@
     width: rem(32);
     height: rem(32);
   }
-}
-
-.footer__lists {
-  color: $white;
-  margin-bottom: rem(16);
 }
 
 .footer__items {

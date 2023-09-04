@@ -1,6 +1,7 @@
 @use "global" as *;
 
 
+
 .list__items {
   @include mq(md) {
     display: flex;
@@ -11,13 +12,8 @@
 
 .footer__lists {
   color: $white;
-  margin-bottom: rem(16);
 }
 
-.lists {
-  color: $white;
-  margin-bottom: rem(16);
-}
 
 .list__items-left {
   @include mq(md) {
@@ -50,6 +46,5 @@
   padding-bottom: rem(12);
   padding-left: rem(22);
   line-height: 1.125;
-  color: white;
 }
 
