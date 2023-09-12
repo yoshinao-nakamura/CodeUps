@@ -1,11 +1,6 @@
 @use "global" as *;
 
-.contact {
-  margin-top: rem(90);
-  @include mq(md){
-    margin-top: rem(160);
-  }
-}
+
 
 .contact__inner {
   max-width: rem(600);
@@ -88,7 +83,7 @@
   margin-top: rem(16);
   aspect-ratio: 295 / 160;
   @include mq(md) {
-  // margin-top: 0;
+  margin-top: 0;
   aspect-ratio: 273 / 148;
   }
 }
@@ -107,8 +102,8 @@
   @include mq(md) {
     text-align: center;
     padding-left: rem(81);
-    margin-top: rem(20);
-    margin-bottom: rem(32);
+    margin-top: 0;
+    // margin-bottom: rem(32);
     padding-right: 0;
   } 
 }
@@ -155,12 +150,12 @@
     height: rem(50);
     position: absolute;
     top: -25px;
-    right: calc(50% - min(50%, 160px));
+    right: calc(50% - min(48%, rem(160)));
   @include mq(md) {
     width: rem(301);
     height: rem(138);
     position: absolute;
     top: -45px;
-    right: calc(50% - min(50%, 670px));
+    right: calc(50% - min(48%, rem(670)));
   }
 }
