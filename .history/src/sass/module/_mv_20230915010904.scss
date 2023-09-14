@@ -1,0 +1,46 @@
+@use 'global' as *;
+
+.mv {
+  position: relative;
+  height: 100vh;
+  // background-image: url(assets/images/common/mv_1.png);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  overflow: hidden;
+}
+
+
+.mv__header {
+  position: absolute;
+  top: 53%;
+  transform: translate(-50%,-50%);
+  left: 53%;
+  color: $white;
+  z-index: 1000;
+  text-align: center;
+  @include mq(md) {
+    top: 54%;
+    left: 51%;
+  }
+ }
+
+.mv__title {
+  font-size: rem(40);
+  font-weight: $regular;
+  font-family: $lato-family;
+  letter-spacing: 0.54em;
+  text-indent: 0.54em;
+  align-items: center;
+  @include mq(md) {
+    font-size: 5rem;
+  }
+}
+
+.mv__subtitle {
+  font-size: rem(20);
+  line-height: 1.8125;
+  text-align: center;
+  font-family: $en-family;
+  font-weight: 400;
+}
+

@@ -1,9 +1,13 @@
-
 $(document).ready(function() {
   $("#btn02").click(function() {
+    console.log("Button clicked"); // Check if click event is registered
     $(this).toggleClass("active");
     $("#menu").toggleClass("active");
     $(".header").toggleClass("active");
+    
+    // Add or remove a class to the body to prevent scrolling
+    $("body").toggleClass("body-locked");
+    console.log("Body class toggled"); // Check if class is toggled
   });
 });
 
