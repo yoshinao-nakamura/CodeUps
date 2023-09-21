@@ -11,7 +11,6 @@
 #page-top a {
   display: none;
   @include mq(md) {
-    display: block;
     border-radius: 50%;
     height: rem(80);
     padding: 0;
@@ -19,6 +18,7 @@
     transition: opacity .5s;
     width: rem(80);
   }
+
 }
 #page-top a:hover {
   @include mq(md) {

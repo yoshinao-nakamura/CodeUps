@@ -61,10 +61,10 @@
 .header__pc-nav-item-link span::after {
   content: "";
   position: absolute;
-  bottom: rem(15);
+  bottom: rem();
   left: 10%;
   width: 80%;
-  height: rem(1);
+  height: 1px;
   background: #fff;
   transition: all 0.3s;
   transform: scaleX(0);

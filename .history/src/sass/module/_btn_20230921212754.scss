@@ -53,13 +53,13 @@
   content: "";
   position: absolute;
   top: 30%;
-  left: calc(100% + rem(5));
-  width: rem(40);
-  height: rem(6);
+  left: calc(100% + 5px);
+  width: 40px;
+  height: 6px;
   margin-top: rem(3); /* 中央に配置 */
   margin-left: rem(7);
-  border-bottom: rem(1) solid #fff;
-  border-right: rem(1) solid #fff;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
   transform: skewX(45deg);
   z-index: 5;
   transition: border-color 0.2s; /* アニメーションを設定 */
