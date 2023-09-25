@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.block__date {
+  font-family: Gotu;
+  font-size: rem(14);
+  color: #0D2936;
+  line-height: 1.5;
+}
+
+.block__title {
+  font-weight: $normal;
+  font-size: rem(16);
+  border-bottom: rem(1) solid #408F95;
+  padding-bottom: rem(4);
+}
+
+.block__text {
+  line-height: 1.5;
+  margin-top: rem(16);
+}

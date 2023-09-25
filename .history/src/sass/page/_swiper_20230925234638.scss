@@ -1,0 +1,51 @@
+@use "global" as *;
+.swiper-campaign {
+  margin-right: calc(50% - 48vw);
+  position: relative;
+}
+
+.swiper-wrapper {
+  padding-bottom: rem(10);
+  margin-top: rem(24);
+  @include mq(md) {
+   margin-top: rem(40);
+  }
+}
+
+.custom-next-button.swiper-button-next {
+  display: none;
+  @include mq(md) {
+    display: block;
+    background-image: url('../../assets/images/common/campaign-right.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: (rem(-85));
+    left:calc(48% + rem(370));
+    height: rem(80);
+    width: rem(80);
+  }
+}
+.custom-prev-button.swiper-button-prev {
+  display: none;
+  @include mq(md) {
+    display: block;
+    background-image: url('../../assets/images/common/campaign-left.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: rem(-85);
+    left:calc(48% + rem(210));
+    height: rem(80);
+    width: rem(80);
+  }
+}
+
+
+.swiper-button-next:after {
+  display: none;
+}
+
+.swiper-button-prev:after {
+  display: none;
+}
