@@ -58,7 +58,6 @@ const swiperSlides = document.querySelectorAll(".swiper-slide");
 swiperSlides.forEach(slide => {
   slide.style.width = "333px";
   slide.style.marginRight = "40px";
-  slide.style.height="auto";
 });
 
 

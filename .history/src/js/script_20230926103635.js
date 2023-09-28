@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $(".js-hamburger").click(function() {
+  $("js-hamburger").click(function() {
     console.log("Button clicked"); // Check if click event is registered
     $(this).toggleClass("active");
     $("#menu").toggleClass("active");
@@ -58,7 +58,6 @@ const swiperSlides = document.querySelectorAll(".swiper-slide");
 swiperSlides.forEach(slide => {
   slide.style.width = "333px";
   slide.style.marginRight = "40px";
-  slide.style.height="auto";
 });
 
 
