@@ -6,7 +6,7 @@
   height: rem(24);
   cursor: pointer;
   @include mq(md) {
-    display: none;
+    display: ;
   }
 }
 .hamburger span {
