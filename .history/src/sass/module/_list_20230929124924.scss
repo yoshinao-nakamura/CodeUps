@@ -8,6 +8,9 @@
   }
 }
 
+.lists {
+  margin-bottom: rem(16);
+}
 
 .list__items-left {
   @include mq(md) {

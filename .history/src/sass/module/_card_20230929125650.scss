@@ -48,6 +48,7 @@
   color: #408F95;
   font-size: rem(12);
   margin-left: auto;
+  // line-height: 1.83;
   @include mq(md) {
     padding: rem(6) rem(16);
   }
@@ -71,6 +72,7 @@
   font-weight: $regular;
   line-height: 1.714;
   color: #0D2936;
+  // padding-top: 0.5rem;
   @include mq(md) {
     font-size: rem(16);
   }
