@@ -60,7 +60,7 @@
   display: flex;
   gap: rem(16);
   margin-top: rem(30);
-  justify-content: center;
+  justify-content: ;
   @include mq(md) {
     gap: rem(120);
     margin-top: 0;

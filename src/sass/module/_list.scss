@@ -1,19 +1,19 @@
 @use "global" as *;
 
 
-.list__items {
-  @include mq(md) {
-    display: flex;
-    gap: rem(120);
-  }
-}
+// .list__items {
+//   @include mq(md) {
+//     display: flex;
+//     gap: rem(120);
+//   }
+// }
 
 
-.list__items-left {
-  @include mq(md) {
-    display: flex;
-  }
-}
+// .list__items-left {
+//   @include mq(md) {
+//     display: flex;
+//   }
+// }
 
  .list__title {
   display: flex;

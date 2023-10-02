@@ -13,10 +13,10 @@
 
 
 .footer__logo {
-  align-items: end;
   @include mq(md) {
     display: flex;
     gap: rem(40);
+    margin-bottom: rem(12);
   }
 }
 
@@ -37,7 +37,9 @@
   gap: rem(16);
   align-items: end;
   margin-top: rem(16);
+  margin-bottom: rem(30);
   @include mq(md) {
+    margin-bottom: rem(4);
     margin-top: 0;
   }
 }
@@ -58,12 +60,11 @@
 
 .footer__items {
   display: flex;
-  gap: rem(16);
-  margin-top: rem(30);
   justify-content: center;
+  gap: rem(16);
+  margin-top: rem();
   @include mq(md) {
     gap: rem(120);
-    margin-top: 0;
   }
 }
 
@@ -83,7 +84,7 @@
   color: $white;
   text-align: center;
   @include mq(md) {
-    margin-top: rem(60);
+    margin-top: rem(52);
     font-size: rem(14);
   }
 }

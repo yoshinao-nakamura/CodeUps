@@ -36,10 +36,8 @@
   display: flex;
   gap: rem(16);
   align-items: end;
-  margin-top: rem(16);
-  @include mq(md) {
-    margin-top: 0;
-  }
+  // margin-top: rem(16);
+  // margin-bottom: rem(30);
 }
 .footer__logo-sns img {
   width: rem(24);
@@ -58,12 +56,12 @@
 
 .footer__items {
   display: flex;
+  justify-content: center;
   gap: rem(16);
   margin-top: rem(30);
-  justify-content: center;
   @include mq(md) {
     gap: rem(120);
-    margin-top: 0;
+    margin-top: rem();
   }
 }
 
@@ -83,7 +81,7 @@
   color: $white;
   text-align: center;
   @include mq(md) {
-    margin-top: rem(60);
+    margin-top: rem(52);
     font-size: rem(14);
   }
 }

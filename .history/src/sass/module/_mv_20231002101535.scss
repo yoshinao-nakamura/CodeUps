@@ -14,13 +14,13 @@
   position: absolute;
   top: 50%;
   transform: translate(-50%,-50%);
-  left: 50%;
+  left: 53%;
   color: $white;
   z-index: 1000;
   text-align: center;
   @include mq(md) {
-    top: 50%;
-    left: 50%;
+    top: 54%;
+    left: 51%;
   }
  }
 
