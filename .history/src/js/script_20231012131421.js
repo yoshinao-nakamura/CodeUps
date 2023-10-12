@@ -2,7 +2,7 @@ $(document).ready(function() {
   $(".hamburger-js").click(function() {
     console.log("Button clicked"); // Check if click event is registered
     $(this).toggleClass("active");
-    $(".drawer-js").toggleClass("active");
+    $(".js-drawer").toggleClass("active");
     $(".header").toggleClass("active");
     
     // Add or remove a class to the body to prevent scrolling

@@ -25,6 +25,8 @@
 }
 
 
+
+
 .drawer__nav {
   display: flex;
   justify-content: center;
@@ -33,4 +35,10 @@
 
 .drawer__list {
   color: $white;
+}
+
+
+.drawer-locked {
+  height: 100%;
+  position: fixed;
 }

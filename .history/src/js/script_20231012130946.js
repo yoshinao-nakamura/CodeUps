@@ -1,12 +1,12 @@
 $(document).ready(function() {
-  $(".hamburger-js").click(function() {
+  $(".js-hamburger").click(function() {
     console.log("Button clicked"); // Check if click event is registered
     $(this).toggleClass("active");
-    $(".drawer-js").toggleClass("active");
+    $(".js-drawer").toggleClass("active");
     $(".header").toggleClass("active");
     
     // Add or remove a class to the body to prevent scrolling
-    $("body").toggleClass("drawer-js");
+    $("body").toggleClass("drawer-locked");
     console.log("Body class toggled"); // Check if class is toggled
   });
 });
