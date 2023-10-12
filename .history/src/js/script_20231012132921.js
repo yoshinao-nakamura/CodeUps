@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $(".js-hamburger").click(function() {
+  $(".hamburger").click(function() {
     console.log("Button clicked"); // Check if click event is registered
     $(this).toggleClass("active");
     $(".js-drawer").toggleClass("active");
