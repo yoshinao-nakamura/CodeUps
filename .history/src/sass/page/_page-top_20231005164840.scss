@@ -1,0 +1,35 @@
+@use "global" as *;
+
+
+#page-top {
+  @include mq(md){
+    bottom: rem(20);
+    position: fixed;
+    right: rem(20);
+  }
+}
+#page-top a {
+  display: ;
+  width: rem(48);
+  height: rem(48);
+  @include mq(md) {
+    border-radius: 50%;
+    width: rem(80);
+    height: rem(80);
+    padding: 0;
+    text-align: center;
+    transition: opacity .5s;
+  }
+}
+#page-top a:hover {
+  @include mq(md) {
+    opacity: 0.8;
+    transition: opacity .5s;
+  }
+}
+
+#page-top a img {
+  @include mq(md) {
+    width: rem(80);
+  }
+}

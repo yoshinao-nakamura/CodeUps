@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.sub-mv {
+  position: relative;
+  height: rem(548);
+  background-image: url(../images/common/page-campaign-mv-sp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include mq(md) {
+    background-image: url(../images/common/page-campaign-mv-pc.jpg);
+  }
+}
+
+.sub-mv__title {
+  text-align: center;
+  font-size: rem(80);
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  @include mq(md) {
+    font-size: rem(80);
+  }
+}
+

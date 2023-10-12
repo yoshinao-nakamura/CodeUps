@@ -1,0 +1,10 @@
+@use "global" as *;
+
+
+.breadcrumb {
+  padding: rem(8) 0;
+}
+
+.breadcrumb__text {
+  font-size: rem(14);
+}

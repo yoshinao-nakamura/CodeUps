@@ -1,0 +1,19 @@
+@use "global" as *;
+
+
+
+
+.campaign-sub__cards {
+  margin-top: rem(40);
+}
+
+.campaign-sub__card:nth-child(n+2){
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.campaign-sub-pagination {
+  margin-top: rem(80);
+}

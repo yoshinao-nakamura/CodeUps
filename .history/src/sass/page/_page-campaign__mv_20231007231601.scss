@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.page-campaign__mv {
+  padding-top: rem(80);
+ @include mq(md) {
+   position: relative;
+   padding-top: rem(108);
+ }
+}
+
+.blog::before {
+ @include mq(md) {
+   content: "";
+   display: inline-block;
+   background-image: url(../images/common/blog_back-img.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: rem(500);
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -10;
+ }
+}

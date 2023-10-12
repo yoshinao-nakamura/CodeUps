@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.sub__mv {
+  position: relative;
+  height: rem(548);
+}
+
+
+.sub__mv-img img {
+  height: rem(548);
+  width: 100%;
+}

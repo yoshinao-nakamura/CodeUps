@@ -1,0 +1,6 @@
+@use 'global' as *; 
+
+.gallery__images {
+  display: grid;
+  grid-template-columns: 1fr .16fr 1fr;
+}

@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.card-guid {
+  margin-top: rem(24);
+}
+
+.card-guid__text {
+  text-align: left;
+  color: #0D2936;
+}

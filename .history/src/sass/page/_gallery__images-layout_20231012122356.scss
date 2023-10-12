@@ -1,0 +1,6 @@
+@use 'global' as *; 
+
+.gallery__images-layout {
+   margin-top: rem(40);
+   @include mq
+}

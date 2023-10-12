@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.about-us-sub__mv {
+  position: relative;
+  height: rem(460);
+  background-image: url(../images/common/about-us-sub__mv-sp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include mq(md) {
+    background-image: url(../images/common/about-us-sub-mv-sp.jpg);
+    height: rem(548);
+  }
+}
+
+.about-us-sub__mv-title {
+  text-align: center;
+  font-size: rem(40);
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  @include mq(md) {
+    font-size: rem(80);
+  }
+}
+

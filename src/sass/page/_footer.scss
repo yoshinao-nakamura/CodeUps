@@ -52,11 +52,11 @@
 
 
 
-.footer__lists {
+.footer__list {
   color: $white;
 }
 
-.footer__items {
+.footer__nav {
   display: flex;
   gap: rem(16);
   margin-top: rem(30);
@@ -67,7 +67,7 @@
   }
 }
 
-.footer__item {
+.footer__items {
   gap: rem(16);
   @include mq(md) {
     display: flex;
