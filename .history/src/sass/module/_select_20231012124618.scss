@@ -29,7 +29,7 @@
 
 .select__box {
   display: grid;
-  grid-template-columns: repeat(2,0.5fr);
+  grid-template-columns: repeat(2,1fr);
   gap: rem(12);
   @include mq(md) {
     display: flex;
@@ -47,8 +47,11 @@
   font-size: rem(12);
 }
 
-.select__text-first {
+.select__text:hover {
   color: white;
   background-color: #408F95;
 }
 
+.select__text-first {
+  colo
+}
