@@ -1,0 +1,67 @@
+@use "global" as *;
+
+
+.pc-nav {
+  margin-left: auto;
+}
+
+.pc-nav__items {
+  display: flex;
+  height: inherit;
+}
+.pc-nav__item {
+  height: inherit;
+  display: flex;
+}
+
+
+.pc-nav__item a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: $white;
+  font-weight: 400;
+  font-size: rem(18);
+  font-family: $en-family;
+  line-height: 1;
+  text-decoration: none; /* 下線を削除 */
+  position: relative;
+  height: inherit;
+  align-items: center; /* 上下中央に配置 */
+  justify-content: center; /* 左右中央に配置 */
+  padding-left: min(1.4vw, 1.25rem);
+  padding-right: min(1.4vw, 1.25rem);
+}
+.pc-nav__item a span {
+  color: $white;
+  font-size: rem(10);
+  font-family: $base-font-family;
+  margin-top: rem(4);
+  line-height: 1.5;
+}
+
+.pc-nav__items li {
+  position: relative;
+}
+
+
+.pc-nav__i::after,
+.pc-nav__i span::after {
+  content: "";
+  position: absolute;
+  bottom: rem(15);
+  left: 10%;
+  width: 80%;
+  height: rem(1);
+  background: #fff;
+  transition: all 0.3s;
+  transform: scaleX(0);
+  transform-origin: center top;
+}
+
+.pc-nav__i:hover::after,
+.pc-nav__i span:hover::after {
+  transform: scaleX(1);
+}
+

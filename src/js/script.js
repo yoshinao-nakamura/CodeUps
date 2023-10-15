@@ -1,29 +1,47 @@
 $(document).ready(function() {
   $(".js-hamburger").click(function() {
-    console.log("Button clicked"); // Check if click event is registered
+    console.log("Button clicked"); // クリックイベントが登録されているか確認
     $(this).toggleClass("active");
     $(".js-drawer").toggleClass("active");
     $(".header").toggleClass("active");
     
-    // Add or remove a class to the body to prevent scrolling
+    // ボディ要素にクラスを追加または削除してスクロールを制御
     $("body").toggleClass("js-drawer");
-    console.log("Body class toggled"); // Check if class is toggled
+    console.log("Body class toggled"); // クラスがトグルされたか確認
+  });
+
+  // ウィンドウの幅を確認し、条件を満たす場合はドロワーを閉じる
+  $(window).resize(function() {
+    if ($(window).width() >= 768) {
+      $(".js-hamburger").removeClass("active");
+      $(".js-drawer").removeClass("active");
+      $(".header").removeClass("active");
+      $("body").removeClass("js-drawer");
+    }
   });
 });
 
 
-const splide = new Splide(".splide", {
-  autoplay: true, // 自動再生
-  type: "fade", // フェード
-  rewind: true, // スライダーの終わりまで行ったら先頭に巻き戻す
-  pauseOnHover: false, // カーソルが乗ってもスクロールを停止させない
-  pauseOnFocus: false, // 矢印をクリックしてもスクロールを停止させない
-  interval: 5000, // 自動再生の間隔
-  speed: 2000, // スライダーの移動時間
-}).mount();
+window.addEventListener('load', () => {
+  const elem = document.querySelector('.js-mv-swiper');
+  if (elem === null) return;
+  const swiperParams = {
+    loop: true, // ループさせる
+    effect: 'fade', // フェードのエフェクト
+    autoplay: {
+      delay: 4000, // ４秒後に次の画像へ
+      disableOnInteraction: false, // ユーザー操作後に自動再生を再開する
+    },
+    speed: 2000, // ２秒かけながら次の画像へ移動
+    allowTouchMove: false, // マウスでのスワイプを禁止
+  };
+  const swiper = new Swiper('.js-mv-swiper', swiperParams);
+});
 
 
-const mainSwiper = new Swiper(".js-Swiper", {
+
+
+const mainSwiper = new Swiper(".js-campaign-Swiper", {
   loop: true, // 無限ループを有効にする
   spaceBetween: 30,
   centeredSlides: false, // centeredSlidesをfalseに設定

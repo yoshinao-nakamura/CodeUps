@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.campaign-sub__mv {
+  position: relative;
+  height: rem(460);
+  background-image: url(../images/common/page-campaign-mv-sp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include mq(md) {
+    background-image: url(../images/common/page-campaign-mv-pc.jpg);
+    height: rem(548);
+  }
+}
+
+.campaign-sub__title {
+  text-align: center;
+  font-size: rem(40);
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  font-family: lato;
+  @include mq(md) {
+    font-size: rem(80);
+  }
+}
+
+
+
+
+.campaign-sub__cards {
+  margin-top: rem(40);
+}
+
+
+.campaign-sub-pagination {
+  margin-top: rem(80);
+}

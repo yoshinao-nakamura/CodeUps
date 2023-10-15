@@ -1,0 +1,35 @@
+@use "global" as *;
+
+ .footer-list__link a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: $bold;
+  padding: rem(12) 0;
+  line-height: 1.125;
+  margin-top:rem(16)
+}
+
+.footer-list__link a:hover {
+  opacity: 0.6;
+}
+
+.footer-list__link a
+
+
+.footer-list__link a img {
+  margin-right: rem(4); 
+  width: rem(18);
+  height: rem(18);
+}
+
+
+
+.footer-list__text {
+  padding-top: rem(12);
+  padding-bottom: rem(12);
+  padding-left: rem(22);
+  line-height: 1.125;
+  color: white;
+}
+

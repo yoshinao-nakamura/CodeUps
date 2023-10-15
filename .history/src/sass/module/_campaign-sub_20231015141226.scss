@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.campaign-sub__inner {
+  max-width: rem(500);
+  width: 100%;
+}
+
+.campaign-sub__mv {
+  position: relative;
+  height: rem(460);
+  background-image: url(../images/common/page-campaign-mv-sp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include mq(md) {
+    background-image: url(../images/common/page-campaign-mv-pc.jpg);
+    height: rem(548);
+  }
+}
+
+
+.campaign-sub__cards {
+  margin-top: rem(40);
+}
+
+
+.campaign-sub__pagination {
+  margin-top: rem(80);
+}

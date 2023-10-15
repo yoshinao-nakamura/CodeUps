@@ -1,0 +1,44 @@
+@use 'global' as *; 
+
+@-webkit-keyframes zoomUp {
+  0% {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  }
+  100% {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+  }
+  }
+  
+  @keyframes zoomUp {
+  0% {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  }
+  100% {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+  }
+  }
+  
+  .swiper-container{
+    position: relative;
+  }
+  .swiper-slide-active .swiper-img,
+  .swiper-slide-duplicate-active .swiper-img,
+  .swiper-slide-prev .swiper-img {
+  -webkit-animation: zoomUp 12s linear 0s;
+  animation: zoomUp 12s linear 0s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  .swiper-slide {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  }
+  .swiper-slide-img {
+  height: 600px;
+  }
+  

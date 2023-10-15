@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.bloitems {
+  display: block;
+  padding-left: rem(6);
+  padding-right: rem(6);
+  @include mq(md) {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: rem(40);
+  }
+}
+
+

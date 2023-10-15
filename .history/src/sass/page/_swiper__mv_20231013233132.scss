@@ -1,0 +1,31 @@
+@use 'global' as *; 
+
+@-webkit-keyframes zoomUp {
+  0% {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  }
+  100% {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+  }
+  }
+  
+  @keyframes zoomUp {
+  0% {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  }
+  100% {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+  }
+  }
+  
+  .mv-swiper-slide__img img {
+    aspect-ratio: 16 / 9;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  

@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.campaign-guid {
+  display: none;
+  @include mq(md) {
+    display: block;
+    margin-top: rem(24);
+  }
+}
+
+.campaign-guid__text {
+  text-align: left;
+  color: #0D2936;
+}
+
+.campaign-guid__info {
+  text-align: center;
+  margin-top: rem(32);
+  color: #408F95;
+}
+
+
+.campaign-guid__period {
+  font-style: lato;
+  font-weight: bold;
+}
+
+.campaign-guid__contact {
+  font-size: rem(14);
+  margin-top: rem(7);
+}
+
+.campaign-guid__btn {
+  text-align: center;
+  margin-top: rem(16);
+}

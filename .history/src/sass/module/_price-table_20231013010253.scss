@@ -1,0 +1,26 @@
+@use 'global' as *; 
+
+.price-table-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: rem(14);
+  line-height: 1.5;
+
+  font-weight: $regular;
+  margin-top: rem(8);
+  @include mq(md){
+    font-size: rem(16);
+  }
+}
+
+.price-table-text dt {
+  max-width: rem(300);
+  width: 100%;
+}
+
+.price-table-text dd {
+  max-width: rem(100);
+  width: 100%;
+  text-align: right;
+}
