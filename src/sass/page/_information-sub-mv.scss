@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.information-sub-mv {
+  height: rem(460);
+  background-image: url(../images/common/information-sub__mv-sp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include mq(md) {
+    background-image: url(../images/common/information-sub__mv-pc.jpg);
+    height: rem(548);
+  }
+}

@@ -4,6 +4,11 @@
   position: relative;
 }
 
+.gallery__inner {
+  max-width: rem(500);
+  width: 100%;
+}
+
 .gallery::after {
   @include mq(md) {
     content: "";
@@ -63,4 +68,28 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.gallery__grayDisplay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 11000;
+}
+
+.gallery__grayDisplay img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: rem(920);
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
 }

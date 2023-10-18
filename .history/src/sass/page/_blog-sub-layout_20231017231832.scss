@@ -1,0 +1,6 @@
+@use "global" as *;
+
+.blog-sub-layout {
+  margin-top: rem(52);
+  @include mq(md)
+}

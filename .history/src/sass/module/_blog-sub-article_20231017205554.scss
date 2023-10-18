@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.blog-article__cards {
+  padding-left: rem(6);
+  padding-right: rem(6);
+}
+
+.blog-article-cards__item {
+  margin-top: rem(25);
+   @include mq(md) {
+    margin-top: rem(80);
+  }
+}
+
+
+.blog-article-cards__item:first-child {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
+}

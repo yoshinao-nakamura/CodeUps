@@ -1,0 +1,46 @@
+@use "global" as *;
+
+// .details-summary {
+// 	cursor: pointer;
+// 	transition: 0.2s;
+// 	padding: 6px;
+// 	border-radius: 6px;
+// 	font-size: 20px;
+
+// 	/* ホバー時のスタイル */
+// 	&:hover {
+// 		cursor: pointer;
+// 		background-color: #bee1de;
+// 	}
+
+// 	/* タブフォーカス時のスタイル */
+// 	&:focus-visible {
+// 		outline: dashed #00a5a0;
+// 	}
+// }
+
+
+.accordion .inner{
+  display: none;
+}
+ 
+.accordion p{
+  position: relative;
+  cursor: pointer;
+}
+ 
+.accordion p::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  content: url(../images/common/acordhion-close.svg);
+  width:rem(24);
+  height:rem(24);
+  
+  transition: all 0.4s;
+}
+ 
+.accordion p.xmark:before {
+  content: url(../images/common/acordhion-open.svg);
+}

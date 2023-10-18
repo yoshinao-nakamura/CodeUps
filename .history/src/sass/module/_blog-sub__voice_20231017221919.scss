@@ -1,0 +1,11 @@
+@use 'global' as *; 
+
+.blog-sub-voice__img {
+  aspect-ratio: 294 / 218;
+}
+
+.blog-sub-voice__img img {
+  width: 100%;
+  height: 100%;
+  
+}
