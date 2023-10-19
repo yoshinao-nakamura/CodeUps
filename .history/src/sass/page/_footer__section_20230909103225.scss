@@ -1,7 +1,0 @@
-@use "global" as *;  margin-top: rem(90);
-
-.footer__section
-
-@include mq(md) {
-  margin-top: rem(150);
-}

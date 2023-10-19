@@ -1,9 +1,0 @@
-@use "global" as *;  
-
-.ffooter-layout {
-  margin-top: rem(90);
-  @include mq(md) {
-    margin-top: rem(150);
-  }
-}
-

@@ -31,6 +31,36 @@
   width: 100%;
 }
 
+
+.about-us-sub__mv {
+  position: relative;
+  height: rem(460);
+  background-image: url(../images/common/about-us-sub__mv-sp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include mq(md) {
+    background-image: url(../images/common/about-us__sub-mv-pc.jpg);
+    height: rem(548);
+  }
+}
+
+.about-us-sub__title {
+  text-align: center;
+  font-size: rem(40);
+  color: white;
+  position: absolute;
+  top: 55%;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  @include mq(md) {
+    font-size: rem(80);
+  }
+}
+
+
+
+
 .about-us-sub__block {
   position: relative;
   margin-top: rem(32);
