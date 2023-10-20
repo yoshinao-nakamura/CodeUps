@@ -1,0 +1,45 @@
+@use "global" as *;
+
+.accordion {
+  margin-top: rem(24);
+}
+
+
+.accordion .accordion__inner{
+  display: none;
+}
+ 
+.accordion p{
+  position: relative;
+  cursor: pointer;
+  padding-left: rem(24);
+  font-size: rem(24);
+}
+ 
+.accordion p::before {
+  content: url(../images/common/acordhion-close.svg);
+  width:rem(24);
+  height:rem(24);
+  margin-right: rem(8);
+  vertical-align: sub;
+  transition: all 0.4s;
+}
+ 
+.accordion p.xmark:before {
+  content: url(../images/common/acordhion-open.svg);
+}
+
+
+.accordion__inner li {
+  margin-left: rem(36);
+  margin-top: rem(8);
+}
+
+.accordion__inner li::before {
+  content: url(../images/common/acordhion-close.svg);
+  width:rem(24);
+  height:rem(24);
+  ve
+  transition: all 0.4s;
+}
+
