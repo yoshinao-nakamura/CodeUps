@@ -42,14 +42,11 @@
 </head>
 <body>
 
-  <header class="header">
+  <header class="header header-layout">
     <div class="header__inner">
       <div class="header__logo">
         <a href="./index.html" class="header__logo-link">
-        <picture>
-          <source srcset="./assets/images/common/header__logo-pc.svg" media="(min-width: 768px)">
           <img src="./assets/images/common/CodeUps.svg" alt="codeups">
-        </picture>
         </a>
       </div>
       <div class="header__hamburger hamburger js-hamburger">
@@ -172,15 +169,20 @@
 
   <main>
 
-    <section class="sub-mv sub-mv-blog">
-      <div class="sub-mv__title">
-        <p>Blog</p>
-      </div>
+    <section class="sub-mv sub-mv--blog">
+      <h1 class="sub-mv__title">
+        Blog
+      </h1>
     </section>
 
-    <div class="breadcrumb">
+
+    <div class="breadcrumb breadcrumb-layout ">
       <div class="breadcrumb__inner inner">
-        <p class="breadcrumb__text">TOP > ブログ一覧</p>
+        <span><a href="./index.html"><span>TOP</span></a></span>
+         >
+         <span><a href="./index.html"><span>ブログ一覧</span></a></span>
+         >
+        <span><span>ブログ詳細</span></span>
       </div>
     </div>
 
@@ -191,40 +193,42 @@
 
         <div class="blog-sub__contents">
           <div class="blog-sub__content">
-            <div class="blog-sub-detail">
-              <div class="blog-card__block">
-                <time class="blog-card__date" datetime="2023-11-27">2023.11/17</time>
-                <p class="blog-card__title">ライセンス取得</p>
+            <!-- detail -->
+            <div class="blog-sub__detail blog-detail">
+              <div class="blog-detail__block">
+                <time class="blog-detail__date" datetime="2023-11-27">2023.11/17</time>
+                <h2 class="blog-detail__title">ライセンス取得</h2>
               </div>
               <div class="blog-detail__img">
-                <img src="./assets/images/common/blog-detail-pc.jpg" alt="">
-                <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                </p>
+                <img src="./assets/images/common/blog-detail-pc.jpg" alt="赤と白のサンゴ">
               </div>
+              <p class="blog-detail__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+              </p>
 
               <div class="blog-detail__img">
-                <img src="./assets/images/common/blog-detail-pc.jpg" alt="">
-                <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                </p>
+                <img src="./assets/images/common/blog-detail-pc.jpg" alt="赤と白のサンゴ">
               </div>
+              <p class="blog-detail__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+              </p>
 
               <ul class="blog-detail__lists">
-                <li class="blog-detail__list">リスト１</li>
-                <li class="blog-detail__list">リスト２</li>
-                <li class="blog-detail__list">リスト３</li>
+                <li class="blog-detail__list">リスト1</li>
+                <li class="blog-detail__list">リスト2</li>
+                <li class="blog-detail__list">リスト3</li>
               </ul>
 
-              <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+              <p class="blog-detail__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
               </p>
 
             </div>
-        <ol class="blog-sub__pagination pagination-001">
-          <li class="prev"><a href="#"><</a></li>
-          <li class="next"><a href="#">></a></li>
-        </ol>
+            <div class="wp-pagenavi">
+              <a class="first" href="#"><</a>
+              <a class="last" href="#">></a>
+            </div>
           </div>
 
-          <div class="blog-sub__content">
+
+          <div class="blog-sub__info">
             <!-- article-title -->
             <div class="blog-sub__topics">
               <div class="blog-sub__topic blog-sub-topic">
@@ -233,9 +237,9 @@
                 </p>
               </div>
 
-              <div class="blog-sub__article blog-article blog-article__cards">
+              <div class="blog-sub__article blog-article">
                 <!-- card -->
-                <div class="blog-article-cards__item blog-article-card">
+                <div class="blog-article__card blog-article-card">
                   <a href="" class="blog-article-card__link">
                     <div class="blog-article-card__img">
                       <img src="./assets/images/common/blog-1.jpg" alt="サンゴ">
@@ -247,7 +251,7 @@
                   </a>
                 </div>
                 <!-- card -->
-                <div class="blog-article-cards__item blog-article-card">
+                <div class="blog-article__card blog-article-card">
                   <a href="" class="blog-article-card__link">
                     <div class="blog-article-card__img">
                       <img src="./assets/images/common/blog-2.jpg" alt="泳いでいるウミガメ">
@@ -259,7 +263,7 @@
                   </a>
                 </div>
              <!-- card -->
-                <div class="blog-article-cards__item blog-article-card">
+                <div class="blog-article__card blog-article-card">
                   <a href="" class="blog-article-card__link">
                     <div class="blog-article-card__img">
                       <img src="./assets/images/common/blog-3.jpg" alt="イソギンチャクに隠れるカクレクマノミ">
@@ -281,21 +285,27 @@
                   口コミ
                 </p>
               </div>
-              <div class="blog-sub__voice blog-sub-voice">
-                <div class="blog-sub-voice__item">
-                  <div class="blog-sub-voice__img">
-                    <img src="./assets/images/common/blog-sub-voice-sp.jpg" alt="">
+              <div class="blog-sub__reviews blog-sub-reviews">
+                <div class="blog-sub-reviews__item">
+                  <div class="blog-sub-reviews__img">
+                    <img src="./assets/images/common/blog-sub-voice-sp.jpg" alt="30代カップルの写真">
                   </div>
-                  <div class="blog-sub-voice__block">
-                    <p class="blog-sub-voice__age">
+                  <div class="blog-sub-reviews__block">
+                    <p class="blog-sub-reviews__age">
                       30代(カップル)
                     </p>
-                    <p class="blog-sub-voice__text">
+                    <p class="blog-sub-reviews__text">
                       ここにタイトルが入ります。ここにタイトル
                     </p>
                   </div>
                 </div>
               </div>
+              <div class="blog-sub__btn">
+                <a href="#" class="btn">
+                  <span>View more</span>
+                </a>
+              </div>
+
             </div>
             
             <div class="blog-sub__topics">
@@ -306,42 +316,48 @@
               </div>
 
               <div class="blog-sub__campaign">
-                <div class="blog-sub__campaign-card campaign-card">
-                  <div class="campaign-card__img">
+                <div class="blog-sub__campaign-card blog-sub-campaign-card">
+                  <div class="blog-sub-campaign-card__img">
                     <img src="./assets/images/common/campaign1.jpg" alt="熱帯魚が泳いでいる">
                   </div>
-                  <div class="campaign-card__body">
-                    <div class="campaign-card__title campaign-card__title--blog-sub">
-                      <p class="campaign-card__sub-title">ライセンス取得</p>
+                  <div class="blog-sub-campaign-card__body">
+                    <div class="blog-sub-campaign-card__title">
+                      <p class="blog-sub-campaign-card__sub-title">ライセンス取得</p>
                     </div>
-                    <div class="campaign-card__meta">
-                      <p class="campaign-card__text">全部コミコミ(お一人様)
+                    <div class="blog-sub-campaign-card__meta">
+                      <p class="blog-sub-campaign-card__text">全部コミコミ(お一人様)
                     </p>
-                      <div class="campaign-card__price">
-                        <p class="campaign-card__regular"><span>¥56,000</span></p>
-                        <p class="campaign-card__discount">¥46,000</p>
+                      <div class="blog-sub-campaign-card__price">
+                        <p class="blog-sub-campaign-card__regular"><span>¥56,000</span></p>
+                        <p class="blog-sub-campaign-card__discount">¥46,000</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="blog-sub__campaign-card blog-sub-campaign-card">
+                  <div class="blog-sub-campaign-card__img">
+                    <img src="./assets/images/common/campaign2.jpg" alt="綺麗な砂浜">
+                  </div>
+                  <div class="blog-sub-campaign-card__body">
+                    <div class="blog-sub-campaign-card__title">
+                      <p class="blog-sub-campaign-card__sub-title">貸切体験ダイビング</p>
+                    </div>
+                    <div class="blog-sub-campaign-card__meta">
+                      <p class="blog-sub-campaign-card__text">全部コミコミ(お一人様)
+                    </p>
+                      <div class="blog-sub-campaign-card__price">
+                        <p class="blog-sub-campaign-card__regular"><span>¥24,000</span></p>
+                        <p class="blog-sub-campaign-card__discount">¥18,000</p>
                       </div>
                     </div>
                   </div>
                 </div>
-
-                <div class="blog-sub__campaign-card campaign-card">
-                  <div class="campaign-card__img">
-                    <img src="./assets/images/common/campaign2.jpg" alt="綺麗な砂浜">
-                  </div>
-                  <div class="campaign-card__body">
-                    <div class="campaign-card__title campaign-card__title--blog-sub">
-                      <p class="campaign-card__sub-title">貸切体験ダイビング</p>
-                    </div>
-                    <div class="campaign-card__meta">
-                      <p class="campaign-card__text">全部コミコミ(お一人様)
-                    </p>
-                      <div class="campaign-card__price">
-                        <p class="campaign-card__regular"><span>¥24,000</span></p>
-                        <p class="campaign-card__discount">¥18,000</p>
-                      </div>
-                    </div>
-                  </div>
+                <div class="blog-sub__btn">
+                  <a href="#" class="btn">
+                    <span>View more</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -355,7 +371,7 @@
               </div>
               
               
-              <ul class="accordion">
+              <ul class="blog-sub__accordion accordion">
                 <li>
                   <p>2023年</p>
                   <ul class="accordion__inner">
@@ -367,7 +383,6 @@
                 <li>
                   <p>2022年</p>
                 </li>
-              </li>
             </ul>
           </div>
         </div>
@@ -436,8 +451,12 @@
         </div>
       
         <div class="footer__sns">
-          <a class="facebook" href="#"><img src="./assets/images/common/FacebookLogo.svg" alt="facebook"></a>
-          <a href="#"><img src="./assets/images/common/instagramlogo.svg" alt="instagram"></a>
+          <a href="#" target="_blank">
+            <img src="./assets/images/common/FacebookLogo.svg" alt="facebook">
+          </a>
+          <a href="#" target="_blank">
+            <img src="./assets/images/common/instagramlogo.svg" alt="instagram">
+          </a>
         </div>
       </div>
 

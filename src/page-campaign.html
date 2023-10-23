@@ -42,7 +42,7 @@
 </head>
 <body>
 
-  <header class="header">
+  <header class="header header-layout">
     <div class="header__inner">
       <div class="header__logo">
         <a href="./index.html" class="header__logo-link">
@@ -174,15 +174,18 @@
   <main>
 
 
-    <section class="sub-mv sub-mv-campaign">
-      <div class="sub-mv__title">
-        <p>Campaign</p>
-      </div>
+    <section class="sub-mv sub-mv--campaign">
+      <h1 class="sub-mv__title">
+        Campaign
+      </h1>
     </section>
 
-    <div class="breadcrumb">
+
+    <div class="breadcrumb breadcrumb-layout ">
       <div class="breadcrumb__inner inner">
-        <p class="breadcrumb__text">TOP > キャンペーン</p>
+        <span><a href="./index.html"><span>TOP</span></a></span>
+         >
+        <span><span>キャンペーン</span></span>
       </div>
     </div>
 
@@ -382,21 +385,31 @@
 
         </div>
         <!-- cards -->
+        <div class="wp-pagenavi wp-pagenavi--pc">
+          <a class="first" href="#"><</a>
+          <span class="current">1</span>
+          <a class="page smaller" href="#">2</a>
+          <a class="page smaller" href="#">3</a>
+          <a class="page smaller" href="#">4</a>
+          <a class="page larger" href="#">5</a>
+          <a class="page larger" href="#">6</a>
+          <a class="last" href="#">></a>
+        </div>
 
+
+        <div class="wp-pagenavi wp-pagenavi--sp">
+          <a class="first" href="#"><</a>
+          <span class="current">1</span>
+          <a class="page smaller" href="#">2</a>
+          <a class="page smaller" href="#">3</a>
+          <a class="page larger" href="#">4</a>
+          <a class="last" href="#">></a>
+        </div>
       </div>
     </section>
 
 
-    <div class="wp-pagenavi">
-      <a class="first" href="#"><</a>
-      <span class="current">1</span>
-      <a class="page smaller" href="#">2</a>
-      <a class="page smaller" href="#">3</a>
-      <a class="page larger" href="#">4</a>
-      <a class="page larger" href="#">5</a>
-      <a class="page larger" href="#">6</a>
-      <a class="last" href="#">></a>
-    </div>
+
 
 
     <section class="contact contact-layout">
@@ -460,8 +473,8 @@
         </div>
       
         <div class="footer__sns">
-          <a class="facebook" href="#"><img src="./assets/images/common/FacebookLogo.svg" alt="facebook"></a>
-          <a href="#"><img src="./assets/images/common/instagramlogo.svg" alt="instagram"></a>
+          <a href="#" target="_blank"><img src="./assets/images/common/FacebookLogo.svg" alt="facebook"></a>
+          <a href="#" target="_blank"><img src="./assets/images/common/instagramlogo.svg" alt="instagram"></a>
         </div>
       </div>
 

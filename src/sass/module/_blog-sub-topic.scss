@@ -1,14 +1,16 @@
 @use 'global' as *; 
 
 .blog-sub-topic__title {
+  display: flex;
+  align-items: center;
   font-size: rem(24);
   border-left: rem(8) solid #408F95;
-  vertical-align: middle;
 }
 
 .blog-sub-topic__title::before {
       content: url(../images/common/blog-sub-topic-pc.svg);
       width: rem(50);
       height: rem(50);
-      margin-right: rem(8); 
+      margin-left: rem(16);
+      margin-right: rem(8);
   }

@@ -42,14 +42,11 @@
 </head>
 <body>
 
-  <header class="header">
+  <header class="header header-layout">
     <div class="header__inner">
       <div class="header__logo">
         <a href="./index.html" class="header__logo-link">
-        <picture>
-          <source srcset="./assets/images/common/header__logo-pc.svg" media="(min-width: 768px)">
           <img src="./assets/images/common/CodeUps.svg" alt="codeups">
-        </picture>
         </a>
       </div>
       <div class="header__hamburger hamburger js-hamburger">
@@ -172,15 +169,18 @@
 
   <main>
 
-    <section class="sub-mv sub-mv-about-us">
-      <div class="sub-mv__title">
-        <p>About us</p>
-      </div>
+    <section class="sub-mv sub-mv--about-us">
+        <h1 class="sub-mv__title">
+          About us
+        </h1>
     </section>
 
-    <div class="breadcrumb">
+
+    <div class="breadcrumb breadcrumb-layout ">
       <div class="breadcrumb__inner inner">
-        <p class="breadcrumb__text">TOP > 私たちについて</p>
+        <span><a href="./index.html"><span>TOP</span></a></span>
+         >
+        <span><span>私たちについて</span></span>
       </div>
     </div>
 
@@ -313,8 +313,8 @@
         </div>
       
         <div class="footer__sns">
-          <a class="facebook" href="#"><img src="./assets/images/common/FacebookLogo.svg" alt=""></a>
-          <a href="#"><img src="./assets/images/common/instagramlogo.svg" alt="instagram"></a>
+          <a href="#" target="_blank"><img src="./assets/images/common/FacebookLogo.svg" alt="facebook"></a>
+          <a href="#" target="_blank"><img src="./assets/images/common/instagramlogo.svg" alt="instagram"></a>
         </div>
       </div>
 

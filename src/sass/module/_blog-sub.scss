@@ -17,7 +17,7 @@
   width: rem(120);
   height: rem(55);
   position: absolute;
-  top: rem(-40);
+  top: rem(-80);
   left: calc(50% - min(48%, rem(300)));
   z-index: -50;
 @include mq(md) {
@@ -25,7 +25,7 @@
   width: rem(301);
   height: rem(138);
   position: absolute;
-  top: rem(-60);
+  top: rem(-70);
   left: calc(50% - min(48%, rem(600)));
 }
 }
@@ -46,12 +46,24 @@
   }
 }
 
-.blog-sub__topics {
+.blog-sub__info {
   max-width: rem(600);
   width: 100%;
   margin-top: rem(80);
+  @include mq(md) {
+    max-width: rem(294);
+    margin-top: 0;
+  }
 }
 
+.blog-sub__topics {
+  max-width: rem(600);
+  width: 100%;
+}
+
+.blog-sub__topics + .blog-sub__topics {
+    margin-top: rem(80);
+}
 
 .blog-sub__reviews {
   margin-top: rem(24);
@@ -63,4 +75,10 @@
 
 .blog-sub__campaign-card + .blog-sub__campaign-card {
   margin-top: rem(40);
+}
+
+
+.blog-sub__btn {
+  margin-top: rem(40);
+  text-align: center;
 }

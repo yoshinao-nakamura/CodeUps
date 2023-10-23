@@ -34,8 +34,19 @@
   }
 }
 
+.campaign-card__body.campaign-card__body--blog {
+  padding: rem(16) rem(16) rem(16);
+  @include mq(md) {
+    padding: rem(16) rem(16) rem(16);
+  }
+}
+
 .campaign-card__title {
   border-bottom: rem(1) solid #408F95;
+}
+
+.campaign-card__title.campaign-card__title--blog-sub {
+  text-align: center;
 }
 
 .campaign-card__top {
@@ -58,7 +69,7 @@
 }
 
 
-.campaign-card__sub-title--sub-page {
+.campaign-card__sub-title.campaign-card__sub-title--sub-page {
   @include mq(md) {
     font-size: rem(24);
   }
@@ -118,6 +129,3 @@
   }
 }
 
-.campaign-card__title--blog-sub {
-  text-align: center;
-}

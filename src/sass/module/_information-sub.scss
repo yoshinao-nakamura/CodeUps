@@ -35,15 +35,23 @@
 
 .information-sub__tab{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  @include mq(md) {
+    justify-content: space-between;
+  }
 }
+
+
+
 .information-sub__list a{
   display: inline-block;
+  max-width: rem(320);
   width: 100%;
   background:#DDF0F1;
-  padding:rem(10) rem(16);
+  padding:rem(10);
   font-size: rem(14);
   vertical-align: middle;
+  text-align: center;
   @include mq(md) {
     font-size: rem(24);
   }
@@ -52,6 +60,7 @@
 .information-sub__list.active a{
   background:#408F95;
   color: #fff;
+  box-shadow: rem(4) rem(4) rem(10) 0  rgba(0,0,0,0.25);
 }
 
 .information-sub__list a::before {
@@ -73,6 +82,31 @@
     color: #fff;
   }
 }
+
+.information-sub__list.information-sub__list--2 a:before {
+  @include mq(md) {
+    content: url(../images/common/information-tab2.svg);
+  }
+}
+
+.information-sub__list.information-sub__list--2.active a::before {
+  @include mq(md) {
+    content: url(../images/common/information-tab2-white.svg);
+  }
+}
+
+.information-sub__list.information-sub__list--3 a:before {
+  @include mq(md) {
+    content: url(../images/common/information-tab3.svg);
+  }
+}
+
+.information-sub__list.information-sub__list--3.active a::before {
+  @include mq(md) {
+    content: url(../images/common/information-tab3-white.svg);
+  }
+}
+
 
 
 /*エリアの表示非表示と形状*/
@@ -107,9 +141,9 @@ a{
 .information-sub__content {
   border: rem(1) solid #408F95;
   padding: rem(24);
-  margin-top: rem(24);
+  margin-top: rem(16);
   @include mq(md) {
-    margin-top: rem(40);
+    margin-top: rem(24);
     display: flex;
     gap: rem(48);
     align-items: center;
@@ -147,5 +181,4 @@ a{
 }
 .information-sub__text {
     margin-top: rem(8);  
-    line-height: 1.5;
 }

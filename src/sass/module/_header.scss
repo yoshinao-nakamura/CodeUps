@@ -1,20 +1,10 @@
 @use "global" as *;
 
-#menu {
-  z-index: 100;
-}
+
 .header {
   background-color: rgba(13, 41, 54, 0.68);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: rem(80);
   transition: 0.3s;
   z-index: 9999;
-  @include mq(md) {
-  height: rem(90);
-  }
 }
 
 .header__inner {

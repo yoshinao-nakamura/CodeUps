@@ -1,6 +1,8 @@
 @use 'global' as *; 
 
-
+.about-us-sub {
+  position: relative;
+}
 
 .about-us-sub::after {
   content: "";

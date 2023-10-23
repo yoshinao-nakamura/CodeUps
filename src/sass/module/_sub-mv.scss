@@ -11,21 +11,28 @@
   }
 }
 
-.sub-mv-campaign {
+.sub-mv.sub-mv--campaign {
   background-image: url(../images/common/page-campaign-mv-sp.jpg);
   @include mq(md) {
     background-image: url(../images/common/page-campaign-mv-pc.jpg);
 }
 }
 
-.sub-mv-about-us {
+.sub-mv.sub-mv--about-us {
   background-image: url(../images/common/about-us-sub__mv-sp.jpg);
   @include mq(md) {
     background-image: url(../images/common/about-us__sub-mv-pc.jpg);
   }
 }
 
-.sub-mv-blog {
+.sub-mv.sub-mv--information {
+  background-image: url(../images/common/information-sub__mv-sp.jpg);
+  @include mq(md) {
+    background-image: url(../images/common/information-sub__mv-pc.jpg);
+  }
+}
+
+.sub-mv.sub-mv--blog {
   background-image: url(../images/common/blog-sub__mv-sp.jpg);
   @include mq(md) {
     background-image: url(../images/common/blog-sub__mv-pc.jpg);
@@ -39,10 +46,11 @@
   font-size: rem(40);
   color: white;
   position: absolute;
-  top: 50%;
+  top: 55%;
   transform: translate(-50%,-50%);
   left: 50%;
-  font-family: lato;
+  font-family: $lato;
+  font-weight: $regular;
   @include mq(md) {
     font-size: rem(80);
   }
