@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .voice-card {
-  box-shadow: 0 rem(4) rem(4) rgba(0,0,0,0.25);
+  box-shadow: rem(0) rem(2) rem(6) rgba(0,0,0,0.25);
   padding: rem(15) rem(16) rem(24);
   @include mq(md) {
     padding: rem(24);
@@ -48,7 +48,7 @@
 
 .voice-card__sub-title {
   font-weight: $normal;
-  font-size: 1rem;
+  font-size: rem(16);
   border-bottom: rem(1) solid #408F95;
   padding-bottom: rem(4);
   margin-top: rem(4);
@@ -73,10 +73,8 @@
 
 .voice-card__content {
   margin-top: rem(15);
-}
-
-.voice-card__text {
   @include mq(md) {
     margin-top: rem(40);
   }
 }
+

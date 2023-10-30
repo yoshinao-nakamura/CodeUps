@@ -1,0 +1,42 @@
+@use "global" as *; 
+
+.contact-thanks {
+  position: relative;
+}
+
+
+.contact-thanks__inner {
+  max-width: rem(600);
+  width: 100%;
+}
+
+.contact-thanks::before {
+    content: "";
+    background-image: url(../images/common/select-fish-sp.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: rem(120);
+    height: rem(55);
+    position: absolute;
+    top: rem(-40);
+    left: calc(50% - min(48%, rem(300)));
+    z-index: -50;
+  @include mq(md) {
+    background-image: url(../images/common/select-fish.svg);
+    width: rem(301);
+    height: rem(138);
+    position: absolute;
+    top: rem(-70);
+    left: calc(50% - min(48%, rem(600)));
+  }
+  }
+
+
+  .contact-thanks__comments {
+    text-align: center;
+  }
+
+  .contact-thanks__text {
+    margin-top: rem(40);
+  }

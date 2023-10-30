@@ -161,11 +161,11 @@ $(".gallery__grayDisplay").click(function () {
 function GethashID (hashIDName){
   if(hashIDName){
     //タブ設定
-    $('.js-information-sub__list').find('a').each(function() { //タブ内のaタグ全てを取得
+    $('.js-information-sub-list').find('a').each(function() { //タブ内のaタグ全てを取得
       var idName = $(this).attr('href'); //タブ内のaタグのリンク名（例）#lunchの値を取得 
       if(idName == hashIDName){ //リンク元の指定されたURLのハッシュタグ（例）http://example.com/#lunch←この#の値とタブ内のリンク名（例）#lunchが同じかをチェック
         var parentElm = $(this).parent(); //タブ内のaタグの親要素（li）を取得
-        $('.js-information-sub__list').removeClass("active"); //タブ内のliについているactiveクラスを取り除き
+        $('.js-information-sub-list').removeClass("active"); //タブ内のliについているactiveクラスを取り除き
         $(parentElm).addClass("active"); //リンク元の指定されたURLのハッシュタグとタブ内のリンク名が同じであれば、liにactiveクラスを追加
         //表示させるエリア設定
         $(".information-sub__area").removeClass("is-active"); //もともとついているis-activeクラスを取り除き
@@ -176,7 +176,7 @@ function GethashID (hashIDName){
 }
 
 //タブをクリックしたら
-$('.js-information-sub__tab a').on('click', function() {
+$('.js-information-sub-tab a').on('click', function() {
   var idName = $(this).attr('href'); //タブ内のリンク名を取得  
   GethashID (idName);//設定したタブの読み込みと
   return false;//aタグを無効にする
@@ -185,7 +185,7 @@ $('.js-information-sub__tab a').on('click', function() {
 
 // 上記の動きをページが読み込まれたらすぐに動かす
 $(window).on('load', function () {
-    $('.js-information-sub__list:first-of-type').addClass("active"); //最初のliにactiveクラスを追加
+    $('.js-information-sub-list:first-of-type').addClass("active"); //最初のliにactiveクラスを追加
     $('.information-sub__area:first-of-type').addClass("is-active"); //最初の.areaにis-activeクラスを追加
   var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
   GethashID (hashName);//設定したタブの読み込み
@@ -201,6 +201,41 @@ $(function(){
   });
 });
 
+// $(function () {
+//   // 最初のコンテンツは表示
+//   $(".faq-accordion-item:first-of-type .faq-accordion-content").css(
+//     "display",
+//     "block"
+//   );
+//   // 最初の矢印は開いた時の状態に
+//   $(".faq-accordion-item:first-of-type .js-faq-accordion-title").addClass("open");
+//   // タイトルをクリックすると
+//   $(".js-faq-accordion-title").on("click", function () {
+//     // クリックしたタイトル以外のopenクラスを外す
+//     $(".js-faq-accordion-title").not(this).removeClass("open");
+//     // クリックしたタイトル以外のcontentを閉じる
+//     $(".js-faq-accordion-title").not(this).next().slideUp(300);
+//     // クリックしたタイトルにopenクラスを付与
+//     $(this).toggleClass("open");
+//     // クリックしたタイトルのcontentを開閉
+//     $(this).next().slideToggle(300);
+//   });
+// });
+
+
+$(function () {
+  // 最初のコンテンツは表示
+  $(".faq-accordion__item:first-of-type .faq-accordion__content").css("display", "block");
+  // 最初の矢印は開いた時の状態に
+  $(".faq-accordion__item:first-of-type .js-faq-accordion__title").addClass("open");
+  // タイトルをクリックすると
+  $(".js-faq-accordion__title").on("click", function () {
+    // クリックした次の要素を開閉
+    $(this).next().slideToggle(300);
+    // タイトルにopenクラスを付け外しして矢印の向きを変更
+    $(this).toggleClass("open", 300);
+  });
+});
 
 
 

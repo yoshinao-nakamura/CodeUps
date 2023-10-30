@@ -35,10 +35,7 @@
 
 .information-sub__tab{
   display: flex;
-  justify-content: space-evenly;
-  @include mq(md) {
-    justify-content: space-between;
-  }
+  justify-content: space-between;
 }
 
 
@@ -52,6 +49,9 @@
   font-size: rem(14);
   vertical-align: middle;
   text-align: center;
+  // animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+  // animation-duration: 2s;
+  // animation-fill-mode: forwards;
   @include mq(md) {
     font-size: rem(24);
   }
@@ -120,7 +120,7 @@
 .information-sub__area.is-active {
     display: block;/*表示*/
     animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
-    animation-duration: 2s;
+    animation-duration: .5s;
     animation-fill-mode: forwards;
 }
 

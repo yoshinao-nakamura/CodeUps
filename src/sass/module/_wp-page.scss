@@ -7,12 +7,16 @@
   margin-top: rem(80);
 }
 .wp-pagenavi a, .wp-pagenavi span {
+  max-width: rem(38);
+  width: 100%;
+  height: 100%;
+	display: inline-block;
   margin: 0 rem(3);
 	color: #408F95;
 	background-color: #fff;
 	border: rem(1) solid #408F95;
 	padding: rem(7) rem(12);
-  font-style: $lato;
+  font-family: $lato;
 	white-space: nowrap;
 	-webkit-transition: 0.2s ease-in-out;
 	-moz-transition: 0.2s ease-in-out;
@@ -21,7 +25,7 @@
 	text-align: center;
 	text-decoration: none;
 	@include mq(md) {
-		margin: 0 rem(6);
+		margin: 0 rem(4);
 	}
 }
 .wp-pagenavi a:hover{
@@ -30,11 +34,11 @@
     }
 
 .wp-pagenavi .first {
-	margin-right: rem(28);
+	margin-right: rem(32);
 }
 
 .wp-pagenavi .last {
-	margin-left: rem(28);
+	margin-left: rem(32);
 }
 
 .wp-pagenavi span.current{
@@ -44,16 +48,44 @@
 	font-weight: bold;
     }
 
-.wp-pagenavi--sp {
-	display: block;
-	@include mq(md) {
-		display: none;
-	}
+.first {
+  position: relative;
 }
 
-.wp-pagenavi--pc {
-	display: none;
-	@include mq(md) {
-		display: block;
-	}
+.first::before {
+  content: '';
+  position: absolute;
+  top: 35%;
+  left: 42%;
+  transform: rotate(45deg);
+  border-bottom: rem(1) solid #408F95;
+  border-left: rem(1) solid #408F95;
+  width: rem(12);
+  height: rem(12);
+}
+
+.first:hover:before {
+  border-bottom: rem(1) solid #fff;
+  border-left: rem(1) solid #fff;
+}
+
+.last {
+  position: relative;
+}
+
+.last::before {
+  content: '';
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  transform: rotate(225deg);
+  border-bottom: rem(1) solid #408F95;
+  border-left: rem(1) solid #408F95;
+  width: rem(12);
+  height: rem(12);
+}
+
+.last:hover::before {
+  border-bottom: rem(1) solid #fff;
+  border-left: rem(1) solid #fff;
 }

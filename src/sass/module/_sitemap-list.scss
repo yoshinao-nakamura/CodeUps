@@ -1,0 +1,35 @@
+@use "global" as *;
+
+
+.sitemap-list__link a {
+  display: flex;
+  align-items: center;
+  color: $black;
+  font-weight: $bold;
+  padding: rem(12) 0;
+  line-height: 1.125;
+  margin-top:rem(16)
+}
+
+.sitemap-list__link a:hover {
+  opacity: 0.6;
+}
+
+.sitemap-list__link a::before {
+  display: inline-block;
+  content: url(../images/common/star-sitemap.svg);
+  width: rem(18);
+  height: rem(18);
+  margin-right: rem(4); 
+}
+
+
+
+.sitemap-list__text {
+  padding-top: rem(12);
+  padding-bottom: rem(12);
+  padding-left: rem(22);
+  line-height: 1.125;
+  color: $black;
+}
+

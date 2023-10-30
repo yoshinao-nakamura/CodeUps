@@ -1,0 +1,190 @@
+@use "global" as *;
+
+
+.form__list {
+  padding-top: rem(22);
+  padding-bottom: rem(24);
+  border-bottom: rem(1) dashed #408F95;
+  @include mq('md') {
+    padding-bottom: rem(41);
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+  }
+}
+
+
+.form__list dt {
+  font-size: rem(16);
+  font-weight: $bold;
+  @include mq('md') {
+    width: rem(220);
+  }
+}
+
+.form__list span {
+  display: inline-block;
+  background-color: #C94800;
+  color: $white;
+  font-size: rem(12);
+  font-weight: $regular;
+  padding: rem(2) rem(18);
+  margin-left: rem(8);
+}
+
+.form__list dd {
+  margin-top: rem(16);
+  @include mq('md') {
+    width: rem(480);
+  }
+}
+
+.form__list input[type=text],
+.form__list input[type=email],
+.form__list input[type=tel] {
+  display: block;
+  border: rem(1) solid #408F95;
+  width: 100%;
+  height: rem(40);
+  padding-left: rem(16);
+  padding-right: rem(16);
+}
+
+.form__list input[type=checkbox] {
+  display: block;
+  width: rem(14);
+  height: rem(14);
+  border: rem(1) solid #408F95;
+  display: inline-flex;
+  vertical-align: sub;
+  cursor: pointer;
+  margin: initial;
+  margin-right: rem(10);
+}
+
+.form__list label {
+  display: block;
+}
+
+.form__list select {
+  display: block;
+  border: rem(1) solid #408F95;
+  width: 100%;
+  height: rem(40);
+  font-size: rem(12);
+  padding-left: rem(8);
+  cursor: pointer;
+}
+
+.form__list--select {
+  position: relative;
+}
+
+.form__list--select::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../images/common/contact-sub-triangle.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: rem(12);
+  height: rem(12);
+  right: rem(10);
+  top: 60%;
+  @include mq('md') {
+    top: 45%;
+  }
+}
+
+.form__list textarea {
+  display: block;
+  border: rem(1) solid #408F95;
+  width: 100%;
+  font-size: rem(12);
+  padding: rem(8);
+}
+
+::placeholder {
+  color: #DDF0F1;
+}
+
+.form__concepts {
+  margin-top: rem(40);
+  @include mq('md') {
+    text-align: center;
+  }
+}
+
+.form__concept {
+  display: flex;
+  justify-content: center;
+}
+
+.form__concept-block {
+  margin-left: rem(8);
+  @include mq('md') {
+    margin-left: rem(16);
+  }
+}
+
+.form__concept label {
+  font-size: rem(14);
+}
+
+
+.form__concept input[type=checkbox] {
+  display: block;
+  width: rem(22);
+  height: rem(22);
+  border: rem(1) solid #408F95;
+  display: inline-flex;
+  vertical-align: text-top;
+  cursor: pointer;
+
+}
+
+.form__list input[type=checkbox],
+.form__concept input[type=checkbox] {
+  position: relative;
+}
+
+.form__list input[type=checkbox]::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-bottom: rem(2) solid #C94800;
+  border-left: rem(2) solid #C94800;
+  opacity: 0;
+  height: rem(4);
+  width: rem(10);
+  top: 0;
+  left: 50%;
+  transform: rotate(-40deg) translateX(-50%);
+  @include mq('md') {
+    width: rem(9);
+    height: rem(5);
+    top: rem(-1);
+    left: 40%;
+  }
+}
+
+.form__concent input[type=checkbox]::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-bottom: rem(3) solid #C94800;
+  border-left: rem(3) solid #C94800;
+  opacity: 0;
+  height: rem(6);
+  width: rem(10);
+  top: 20%;
+  left: 50%;
+  transform: rotate(-45deg) translate(-50%, -50%);
+}
+
+.form__list input[type=checkbox]:checked::after,
+.form__concent input[type=checkbox]:checked::after {
+  opacity: 1;
+}
+

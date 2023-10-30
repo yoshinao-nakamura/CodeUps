@@ -1,0 +1,39 @@
+@use "global" as *;
+
+
+.contact-sub {
+  position: relative;
+}
+
+.contact-sub::before {
+  content: "";
+  background-image: url(../images/common/select-fish-sp.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: rem(120);
+  height: rem(55);
+  position: absolute;
+  top: rem(-30);
+  left: calc(50% - min(48%, rem(300)));
+  z-index: -50;
+@include mq(md) {
+  background-image: url(../images/common/select-fish.svg);
+  width: rem(301);
+  height: rem(138);
+  top: rem(-70);
+  left: calc(50% - min(48%, rem(600)));
+}
+}
+
+.contact-sub__form {
+  max-width: rem(700);
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.contact-sub__btn {
+  margin-top: rem(20);
+  text-align: center;
+}

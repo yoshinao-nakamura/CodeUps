@@ -18,8 +18,11 @@
   text-align: left;
   outline: none;
   background-color: #408F95;
-  /* アニメーションの指定 */
   transition: ease 0.2s;
+}
+
+.btn.btn--404 {
+  background-color: yellow;
 }
 
 .btn::after {
@@ -36,6 +39,10 @@
   width: 100%;
 }
 
+.btn.btn--404::after {
+  background-color: yellow;
+}
+
 /* ボタン内 span の形状 */
 .btn span {
   position: relative;
@@ -43,6 +50,10 @@
   color: #fff;
   font-size: rem(14);
   font-family: $en-family;
+}
+
+.btn.btn--404 span {
+  color: #408F95;
 }
 
 .btn:hover span {
@@ -63,6 +74,11 @@
   transform: skewX(45deg);
   z-index: 5;
   transition: border-color 0.2s; /* アニメーションを設定 */
+}
+
+.btn.btn--404 span::before {
+  border-bottom: rem(1) solid #408F95;
+  border-right: rem(1) solid #408F95;
 }
 
 .btn:hover span::before {
