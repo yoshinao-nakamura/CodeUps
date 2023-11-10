@@ -26,6 +26,11 @@
 }
 }
 
+.contact-sub__inner {
+  max-width: rem(600);
+  width: 100%;
+}
+
 .contact-sub__form {
   max-width: rem(700);
   width: 100%;
@@ -36,4 +41,7 @@
 .contact-sub__btn {
   margin-top: rem(20);
   text-align: center;
+  @include mq(md) {
+    margin-top: rem(40);
+  }
 }

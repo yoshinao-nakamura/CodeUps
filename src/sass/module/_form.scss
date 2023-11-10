@@ -2,23 +2,24 @@
 
 
 .form__list {
-  padding-top: rem(22);
-  padding-bottom: rem(24);
+  padding-bottom: rem(22);
   border-bottom: rem(1) dashed #408F95;
   @include mq('md') {
-    padding-bottom: rem(41);
+    padding-bottom: rem(39);
     display: flex;
-    align-items: center;
-    justify-content: baseline;
   }
 }
 
+.form__list + .form__list {
+  margin-top: rem(40);
+}
 
 .form__list dt {
   font-size: rem(16);
   font-weight: $bold;
   @include mq('md') {
-    width: rem(220);
+    max-width: rem(220);
+    width: 100%;
   }
 }
 
@@ -28,14 +29,18 @@
   color: $white;
   font-size: rem(12);
   font-weight: $regular;
-  padding: rem(2) rem(18);
+  padding: rem(2) rem(12);
   margin-left: rem(8);
+  letter-spacing: 0.4em;
+  text-indent: 0.4em;
 }
 
 .form__list dd {
   margin-top: rem(16);
   @include mq('md') {
-    width: rem(480);
+    max-width: rem(480);
+    width: 100%;
+    margin-top: 0;
   }
 }
 
@@ -45,9 +50,7 @@
   display: block;
   border: rem(1) solid #408F95;
   width: 100%;
-  height: rem(40);
-  padding-left: rem(16);
-  padding-right: rem(16);
+  padding: rem(8) rem(16) rem(7) rem(16);
 }
 
 .form__list input[type=checkbox] {
@@ -56,23 +59,26 @@
   height: rem(14);
   border: rem(1) solid #408F95;
   display: inline-flex;
-  vertical-align: sub;
   cursor: pointer;
   margin: initial;
-  margin-right: rem(10);
+  margin-right: rem(8);
 }
 
-.form__list label {
+.form__label {
   display: block;
+}
+
+.form__label + .form__label {
+  margin-top: rem(4);
 }
 
 .form__list select {
   display: block;
   border: rem(1) solid #408F95;
+  max-width: rem(600);
   width: 100%;
-  height: rem(40);
   font-size: rem(12);
-  padding-left: rem(8);
+  padding: rem(7) rem(8) rem(6) rem(8);
   cursor: pointer;
 }
 
@@ -88,12 +94,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: rem(12);
-  height: rem(12);
+  width: rem(10);
+  height: rem(10);
   right: rem(10);
-  top: 60%;
+  top: 55%;
   @include mq('md') {
-    top: 45%;
+    top: 20%;
   }
 }
 
@@ -112,6 +118,7 @@
 .form__concepts {
   margin-top: rem(40);
   @include mq('md') {
+    margin-top: rem(80);
     text-align: center;
   }
 }
@@ -141,7 +148,6 @@
   display: inline-flex;
   vertical-align: text-top;
   cursor: pointer;
-
 }
 
 .form__list input[type=checkbox],
@@ -169,7 +175,7 @@
   }
 }
 
-.form__concent input[type=checkbox]::after {
+.form__concept input[type=checkbox]::after {
   content: "";
   display: block;
   position: absolute;
@@ -184,7 +190,7 @@
 }
 
 .form__list input[type=checkbox]:checked::after,
-.form__concent input[type=checkbox]:checked::after {
+.form__concept input[type=checkbox]:checked::after {
   opacity: 1;
 }
 

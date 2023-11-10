@@ -62,12 +62,9 @@
   border: rem(.5) solid #408F95;
 }
 
-.price-sub-table__text.price-sub-table__text--third dt {
-  padding-top: rem(18);
-  padding-bottom: rem(18);
-}
 
-.price-sub-table__text dt {
+
+.price-sub-table__dt {
   max-width: rem(240);
   width: 100%;
   border-right: rem(1) solid #408F95;
@@ -77,11 +74,11 @@
   @include mq(md) {
     max-width: rem(340);
     text-align: start;
-    padding: rem(17) 0 rem(17) rem(13);
+    padding: rem(17) rem(13) rem(17);
   }
 }
 
-.price-sub-table__text dd {
+.price-sub-table__dd {
   text-align: right;
   max-width: rem(106);
   width: 100%;
@@ -94,3 +91,13 @@
   }
 }
 
+.price-sub-table__dd.price-sub-table__dd--third{
+  padding-top: rem(18);
+  padding-bottom: rem(18);
+}
+
+
+.price-sub-table__dt.price-sub-table__dt--third{
+  padding-top: rem(18);
+  padding-bottom: rem(18);
+}
