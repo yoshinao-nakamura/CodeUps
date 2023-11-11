@@ -1,17 +1,23 @@
 @use "global" as *;
 
 
-.page-top {
+.page-top a{
   position: fixed;
   bottom: rem(20);
   right: rem(20);
 }
-.page-top a {
-  display: block;
+
+
+.page-top a::before {
+  display: inline-block;
+  content:"";
+  background-image: url("../images/common/page-top.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   width: rem(48);
   height: rem(48);
   @include mq(md) {
-    border-radius: 50%;
     width: rem(80);
     height: rem(80);
     padding: 0;
@@ -19,6 +25,11 @@
     transition: opacity .5s;
   }
 }
+
+.page-top a:hover::before {
+  background-image: url("../images/common/page-top-hover.svg");
+}
+
 .page-top a:hover {
   @include mq(md) {
     opacity: 0.8;

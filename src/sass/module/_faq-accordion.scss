@@ -16,7 +16,7 @@
   height: rem(55);
   position: absolute;
   top: rem(-30);
-  left: calc(50% - min(48%, rem(300)));
+  left: calc(50% - min(49%, rem(350)));
   z-index: -50;
 @include mq(md) {
   background-image: url(../images/common/select-fish.svg);
@@ -94,9 +94,10 @@
   border: rem(1) solid #408F95;
   display: none;
   padding: rem(16) rem(24);
+  line-height: 1.5;
   @include mq(md) {
     margin-top: rem(16);
-    padding: rem(38);
+    padding: rem(38) rem(38) rem(36);
   }
 }
 
