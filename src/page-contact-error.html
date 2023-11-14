@@ -41,8 +41,7 @@
    <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
-
-  <header class="header header-layout">
+   <header class="header header-layout js-header">
     <div class="header__inner">
       <div class="header__logo">
         <a href="./index.html" class="header__logo-link">
@@ -203,29 +202,29 @@
           <form action="" class="contact-sub-error__form form">
               <dl class="form__lists">
                 <div class="form__list form__list--error">
-                  <dt>お名前<span>必須</span></dt>
-                  <dd><input type="text" name="name" id="name" placeholder="沖縄 太郎" required></dd>
+                  <dt class="form__dt">お名前<span>必須</span></dt>
+                  <dd class="form__dd"><input type="text" name="name" id="name" placeholder="沖縄 太郎" required></dd>
                 </div>
                 <div class="form__list">
-                  <dt>メールアドレス<span>必須</span></dt>
-                  <dd><input type="text" name="email" id="email" placeholder="aaa000@ggmail.com" required></dd>
+                  <dt class="form__dt">メールアドレス<span>必須</span></dt>
+                  <dd class="form__dd"><input type="text" name="email" id="email" placeholder="aaa000@ggmail.com" required></dd>
                 </div>
                 <div class="form__list">
-                  <dt>電話番号<span>必須</span></dt>
-                  <dd><input type="text" name="tel" id="tel" placeholder="000-0000-0000" required></dd>
+                  <dt class="form__dt">電話番号<span>必須</span></dt>
+                  <dd class="form__dd"><input type="text" name="tel" id="tel" placeholder="000-0000-0000" required></dd>
                 </div>
                 <div class="form__list">
-                  <dt>お問い合わせ項目<span>必須</span></dt>
-                  <dd>
-                    <label><input type="checkbox" name="checkbox" value="チェックボックス1" checked/>ダイビング講習について</label>
-                    <label><input type="checkbox" name="checkbox" value="チェックボックス2"/>ファンダイビングについて</label>
-                    <label><input type="checkbox" name="checkbox" value="チェックボックス3"/>体験ダイビングについて</label>
+                  <dt class="form__dt">お問い合わせ項目<span>必須</span></dt>
+                  <dd class="form__dd">
+                    <label class="form__label"><input type="checkbox" name="checkbox" value="チェックボックス1" checked/>ダイビング講習について</label>
+                    <label class="form__label"><input type="checkbox" name="checkbox" value="チェックボックス2"/>ファンダイビングについて</label>
+                    <label class="form__label"><input type="checkbox" name="checkbox" value="チェックボックス3"/>体験ダイビングについて</label>
                   </dd>
                 </div>
                 <div class="form__list">
-                  <dt>キャンペーン</dt>
-                  <dd>
-                    <select name="select" class="">
+                  <dt class="form__dt">キャンペーン</dt>
+                  <dd class="form__dd">
+                    <select class="form__select" name="select">
                       <option value="">キャンペーン内容を選択</option>
                       <option value="セレクト1">ライセンス講習</option>
                       <option value="セレクト2">ファンダイビング</option>
@@ -234,8 +233,8 @@
                   </dd>
                 </div>
                 <div class="form__list">
-                  <dt>お問い合わせ内容<span>必須</span></dt>
-                  <dd><textarea name="text" id="" cols="30" rows="10"></textarea></dd>
+                  <dt class="form__dt">お問い合わせ内容<span>必須</span></dt>
+                  <dd class="form__dd"><textarea class="form__textarea" name="text" id="" cols="30" rows="10"></textarea></dd>
                 </div>
               </dl>
  
@@ -262,7 +261,7 @@
 
 
 
-<div class="page-top">
+<div class="page-top js-page-top">
   <a href="#"></a>
 </div>
 

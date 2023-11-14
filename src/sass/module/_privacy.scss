@@ -7,11 +7,18 @@
   margin: 0 auto;
 }
 
+.privacy__title {
+  font-size: rem(24);
+  @include mq(md) {
+    font-size: rem(32);
+  }
+}
+
 .privacy__block {
   margin-top: rem(40);
 }
 
 .privacy__text{
-  margin-top: rem(20);
+  margin-top: rem(36);
   line-height: 2;
 }

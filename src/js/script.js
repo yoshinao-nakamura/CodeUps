@@ -15,7 +15,7 @@ $(document).ready(function() {
     if ($(window).width() >= 768) {
       $(".js-hamburger").removeClass("active");
       $(".js-drawer").removeClass("active");
-      $(".header").removeClass("active");
+      $(".js-header").removeClass("active");
       $("body").removeClass("js-drawer");
     }
   });
@@ -116,7 +116,7 @@ box.each(function(){
 
 
 $(function () {
-  const pageTop = $(".page-top");
+  const pageTop = $(".js-page-top");
   pageTop.hide();
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) { // 100pxスクロールしたら発火
@@ -142,17 +142,17 @@ $(function () {
 
 $(".js-gallery-modal img").click(function () {
   // まず、クリックした画像の HTML(<img>タグ全体)を#frayDisplay内にコピー
-  $(".gallery__grayDisplay").html($(this).prop("outerHTML"));
+  $(".js-gallery-grayDisplay").html($(this).prop("outerHTML"));
   //そして、fadeInで表示する。
-  $(".gallery__grayDisplay").fadeIn(200);
+  $(".js-gallery-grayDisplay").fadeIn(200);
   return false;
 });
 
 // コース画像モーダル非表示イベント
 // モーダル画像背景 または 拡大画像そのものをクリックで発火
-$(".gallery__grayDisplay").click(function () {
+$(".js-gallery-grayDisplay").click(function () {
   // 非表示にする
-  $(".gallery__grayDisplay").fadeOut(200);
+  $(".js-gallery-grayDisplay").fadeOut(200);
   return false;
 });
 
@@ -168,7 +168,7 @@ function GethashID (hashIDName){
         $('.js-information-sub-list').removeClass("active"); //タブ内のliについているactiveクラスを取り除き
         $(parentElm).addClass("active"); //リンク元の指定されたURLのハッシュタグとタブ内のリンク名が同じであれば、liにactiveクラスを追加
         //表示させるエリア設定
-        $(".information-sub__area").removeClass("is-active"); //もともとついているis-activeクラスを取り除き
+        $(".js-information-sub__area").removeClass("is-active"); //もともとついているis-activeクラスを取り除き
         $(hashIDName).addClass("is-active"); //表示させたいエリアのタブリンク名をクリックしたら、表示エリアにis-activeクラスを追加 
       }
     });
@@ -186,7 +186,7 @@ $('.js-information-sub-tab a').on('click', function() {
 // 上記の動きをページが読み込まれたらすぐに動かす
 $(window).on('load', function () {
     $('.js-information-sub-list:first-of-type').addClass("active"); //最初のliにactiveクラスを追加
-    $('.information-sub__area:first-of-type').addClass("is-active"); //最初の.areaにis-activeクラスを追加
+    $('.js-information-sub__area:first-of-type').addClass("is-active"); //最初の.areaにis-activeクラスを追加
   var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
   GethashID (hashName);//設定したタブの読み込み
 });
@@ -195,41 +195,20 @@ $(window).on('load', function () {
 
 
 $(function(){
-  $('.accordion p').on('click', function() {
+  $('.js-accordion p').on('click', function() {
     $(this).next('ul').slideToggle();
     $(this).toggleClass('xmark');
   });
 });
 
-// $(function () {
-//   // 最初のコンテンツは表示
-//   $(".faq-accordion-item:first-of-type .faq-accordion-content").css(
-//     "display",
-//     "block"
-//   );
-//   // 最初の矢印は開いた時の状態に
-//   $(".faq-accordion-item:first-of-type .js-faq-accordion-title").addClass("open");
-//   // タイトルをクリックすると
-//   $(".js-faq-accordion-title").on("click", function () {
-//     // クリックしたタイトル以外のopenクラスを外す
-//     $(".js-faq-accordion-title").not(this).removeClass("open");
-//     // クリックしたタイトル以外のcontentを閉じる
-//     $(".js-faq-accordion-title").not(this).next().slideUp(300);
-//     // クリックしたタイトルにopenクラスを付与
-//     $(this).toggleClass("open");
-//     // クリックしたタイトルのcontentを開閉
-//     $(this).next().slideToggle(300);
-//   });
-// });
-
 
 $(function () {
   // 最初のコンテンツは表示
-  $(".faq-accordion__item:first-of-type .faq-accordion__content").css("display", "block");
+  $(".js-faq-accordion-item:first-of-type .js-faq-accordion-content").css("display", "block");
   // 最初の矢印は開いた時の状態に
-  $(".faq-accordion__item:first-of-type .js-faq-accordion__title").addClass("open");
+  $(".js-faq-accordion-item .js-faq-accordion-title").addClass("open");
   // タイトルをクリックすると
-  $(".js-faq-accordion__title").on("click", function () {
+  $(".js-faq-accordion-title").on("click", function () {
     // クリックした次の要素を開閉
     $(this).next().slideToggle(300);
     // タイトルにopenクラスを付け外しして矢印の向きを変更

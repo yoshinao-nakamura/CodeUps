@@ -1,0 +1,103 @@
+@use "global" as *;
+
+.privacy-policy {
+    position: relative;
+  }
+  
+  
+  .privacy-policy::before {
+      content: "";
+      background-image: url(../images/common/select-fish-sp.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: rem(120);
+      height: rem(55);
+      position: absolute;
+      top: rem(-40);
+      left: calc(50% - min(48%, rem(300)));
+      z-index: -50;
+    @include mq(md) {
+      background-image: url(../images/common/select-fish.svg);
+      width: rem(301);
+      height: rem(138);
+      position: absolute;
+      top: rem(-80);
+      left: calc(50% - min(49%, rem(600)));
+    }
+    }
+  
+
+
+
+
+.privacy-policy__inner {
+    margin: auto;
+    max-width: rem(600);
+    width: 100%;
+    @include mq(md) {
+    max-width: rem(850);
+    }
+}
+
+.privacy-policy__title {
+    font-size: rem(24);
+    font-weight: normal;
+    margin-top: rem(52);
+    @include mq(md){
+    font-size: rem(32);
+    margin-top: rem(150);
+    }
+}
+
+.privacy-policy__text {
+    margin-top: rem(24);
+    font-weight: 400;
+    line-height: 2;
+    @include mq(md) {
+    margin-top: rem(40);
+    }
+}
+
+
+.privacy-policy__item {
+    margin-top: rem(24);
+    @include mq(md) {
+        margin-top: rem(32);
+    }
+}
+
+.privacy-policy__term {
+    line-height: 2;
+}
+
+.privacy-policy__description {
+    font-size: rem(16);
+    line-height: 2;
+    font-weight: 300;
+}
+
+.privacy-policy__description-numbers {
+    counter-reset: number;
+}
+
+
+.privacy-policy__description-number {
+    padding-left: rem(22);
+    text-indent: rem(-15);
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: 2;
+}
+
+
+.privacy-policy__description-number::before {
+    content: counter(number) ". ";
+    counter-increment: number;
+    margin-right: rem(2);
+}
+
+.privacy-policy__description-items {
+    padding-left: rem(20);
+    list-style: disc;
+}

@@ -5,6 +5,7 @@
   position: fixed;
   bottom: rem(20);
   right: rem(20);
+
 }
 
 
@@ -17,23 +18,23 @@
   background-position: center;
   width: rem(48);
   height: rem(48);
+  transition : all 1.5s ease 0s;
   @include mq(md) {
     width: rem(80);
     height: rem(80);
     padding: 0;
     text-align: center;
-    transition: opacity .5s;
   }
 }
 
 .page-top a:hover::before {
   background-image: url("../images/common/page-top-hover.svg");
+  transition : all 1s ease 0s;
 }
 
 .page-top a:hover {
   @include mq(md) {
     opacity: 0.8;
-    transition: opacity .5s;
   }
 }
 
