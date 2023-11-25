@@ -34,11 +34,18 @@
     }
 
 .wp-pagenavi .first {
-	margin-right: rem(32);
+  margin-right: rem(28);
+  @include mq(md) {
+    margin-right: rem(32);
+  }
 }
 
 .wp-pagenavi .last {
-	margin-left: rem(32);
+  margin-left: rem(28);
+  @include mq(md){
+    margin-left: rem(32);
+  }
+
 }
 
 .wp-pagenavi span.current{

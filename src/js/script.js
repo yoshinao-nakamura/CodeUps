@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(document).ready(function() {
   $(".js-hamburger").click(function() {
     console.log("Button clicked"); // クリックイベントが登録されているか確認
     $(this).toggleClass("active");
@@ -202,19 +202,6 @@ $(function(){
 });
 
 
-// $(function () {
-//   // 最初のコンテンツは表示
-//   $(".js-faq-accordion-item:first-of-type .js-faq-accordion-content").css("display", "block");
-//   // 最初の矢印は開いた時の状態に
-//   $(".js-faq-accordion-item .js-faq-accordion-title").addClass("open");
-//   // タイトルをクリックすると
-//   $(".js-faq-accordion-title").on("click", function () {
-//     // クリックした次の要素を開閉
-//     $(this).next().slideToggle(300);
-//     // タイトルにopenクラスを付け外しして矢印の向きを変更
-//     $(this).toggleClass("open", 300);
-//   });
-// });
 
 $(function () {
   // 最初のコンテンツは表示
