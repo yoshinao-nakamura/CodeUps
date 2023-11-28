@@ -2,6 +2,7 @@
 
 .accordion {
   margin-top: rem(24);
+  color: #408F95;
 }
 
 
@@ -22,11 +23,12 @@
   height:rem(24);
   margin-right: rem(8);
   vertical-align: middle;
-  transition: all 0.4s;
+  transition: all 1s;
 }
  
 .accordion p.xmark:before {
   content: url(../images/common/accordion-open.svg);
+  transition: all 1s;
 }
 
 
@@ -41,6 +43,6 @@
   height:rem(24);
   margin-right: rem(8);
   vertical-align: middle;
-  transition: all 0.4s;
+  transition: all 1s;
 }
 

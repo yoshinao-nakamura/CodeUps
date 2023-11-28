@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   font-size: rem(24);
+  font-weight: normal;
   border-left: rem(8) solid #408F95;
 }
 
@@ -13,4 +14,8 @@
       height: rem(50);
       margin-left: rem(16);
       margin-right: rem(8);
+  }
+
+  .blog-article-card__title {
+    font-weight: normal;
   }
