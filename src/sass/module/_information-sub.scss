@@ -40,18 +40,15 @@
 
 
 
-.information-sub__list a{
-  display: inline-block;
+.information-sub__list a {
+  display: flex;
+  align-items: center;
   max-width: rem(320);
   width: 100%;
-  background:#DDF0F1;
-  padding:rem(10);
+  background: #DDF0F1;
+  padding: rem(10);
   font-size: rem(14);
-  vertical-align: middle;
   text-align: center;
-  // animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
-  // animation-duration: 2s;
-  // animation-fill-mode: forwards;
   @include mq(md) {
     font-size: rem(24);
   }

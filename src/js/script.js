@@ -38,9 +38,6 @@ window.addEventListener('load', () => {
   const swiper = new Swiper('.js-mv-swiper', swiperParams);
 });
 
-
-
-
 const mainSwiper = new Swiper(".js-campaign-Swiper", {
   loop: true, // 無限ループを有効にする
   spaceBetween: 30,
@@ -190,6 +187,7 @@ $(window).on('load', function () {
   var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
   GethashID (hashName);//設定したタブの読み込み
 });
+
 
 
 
