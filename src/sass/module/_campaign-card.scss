@@ -3,6 +3,8 @@
 .campaign-card {
   box-shadow: 0 rem(4) rem(4) 0 rgba(0,0,0,0.25);
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -26,6 +28,7 @@
   padding-bottom: rem(24);
   padding-right: rem(16);
   padding-left: rem(16);
+  height: 100%;
   @include mq(md) {
     padding-top: rem(24);
     padding-bottom: rem(40);
@@ -42,7 +45,7 @@
 }
 
 .campaign-card__title {
-  border-bottom: rem(1) solid #408F95;
+
 }
 
 .campaign-card__title.campaign-card__title--blog-sub {
@@ -77,6 +80,10 @@
 
 .campaign-card__meta {
   padding-top: rem(16);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border-top: rem(1) solid #408F95;
 }
 .campaign-card__text {
   text-align: center;
@@ -84,6 +91,8 @@
   font-weight: $regular;
   line-height: 1.714;
   color: #0D2936;
+  margin-top: auto;
+
   @include mq(md) {
     font-size: rem(16);
   }
